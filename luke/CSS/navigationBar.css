@@ -7,7 +7,6 @@ nav.navbar .container{
   display: block;
   width: calc(100% - 64px);
   padding: 0 32px;
-  outline: solid;
 }
 
 nav.navbar .container .content{

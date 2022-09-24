@@ -1,3 +1,33 @@
-.main {
+.main{
   display: grid;
+  grid-template-columns: 1fr;
+}
+
+section.main .banner .container-one{
+  height: 64px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+section.main .banner .container-one .content{
+  display: grid;
+  position: relative;
+  padding-top: 13.5px;
+  grid-template-columns: 135px 33px 1fr 52px;
+  height: calc(100% - 13.5px);
+  max-height: 100%;
+  cursor: default;
+}
+
+section.main .banner .container-one .content .swiper-controller{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 135px;
+  height: 36px;
+  font-size: 0.875rem;
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
