@@ -92,39 +92,35 @@ div.menuBar .right_item{
 
 div.benner_img{
     overflow: hidden;
-    width: fit-content;
+    width: 100%;
     height: 30%;
 }
 
 div.benner_img #benner{
     width: 100%;
-    top: 50%;
-    left: 50%;
-    
   }
   
 
 div.benner_control{
-    float: left;
-    width: 70%;
-    height: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    float: center;
+    width: 100%;
+    height: 40px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
 }
 
 div.control_main{
-    float: left;
     width: 11%;
     height: 40px;
     text-align: left;
     border-radius: 100px;
     border-style: solid 1px;
-    background-color: gray;
+    background-color:rgb(127,127,127, 1);
 }
 
 div.control_event{
-    float: left;
     width: 80%;
     height: 40px;
     border-left: 1px solid gray;
@@ -204,7 +200,7 @@ div.center_search{
 }
 
 div.center_search #searchWindow{
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(227,248,239, 1);
     width: 30%;
     height: 50px;
     border-radius: 50px;
@@ -213,7 +209,7 @@ div.center_search #searchWindow{
     background-size: 25px;
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 480px;
+    background-position-x: 520px;
     padding-left: 15px;
     font-size: 15pt;
     margin-left: 35%;
@@ -237,13 +233,13 @@ div.center_search #searchWindow{
     border-radius: 50px;
     border-style: none;
     padding: 5px;
-    background-color: lightgrey;
+    background-color: rgb(241,243,245, 1);
 }
 
 div.Freelecture{
     width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 100px;
 }
 
@@ -261,7 +257,72 @@ div.Freelecture #guideTxt{
 div.Freelecture #lectureList{
     margin-top: 20px;
     height: 320px;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+div.Freelecture #lectureBlock1{
+    width: 20%;
+}
+div.Freelecture #lectureBlock2{
+    width: 20%;
+}
+div.Freelecture #lectureBlock3{
+    width: 20%;
+}
+div.Freelecture #lectureBlock4{
+    width: 20%;
+}
+div.Freelecture #lectureBlock5{
+    width: 20%;
+}
+
+#lectureName{
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+
+#lectuerTeacher{
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(153,153,153, 1);
+}
+
+#price{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13pt;
+    font-weight: bold;
+    color: rgb(69,124,203, 1);
+}
+
+#listenNum{
+    width: 75px;
+    float: left;
+    margin-right: 5px;
+    background-color: rgb(246,213,234, 1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#update{
+    width: 60px;
+    float: left;
+    margin-right: 5px;
+    background-color: rgb(228,250,251, 1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#priceDown{
+    width: 48px;
+    float: left;
+    background-color: rgb(255,200,199, 1);
+    padding: 5px;
+    border-radius: 3px;
 }
 
 div.beginner{
@@ -285,7 +346,24 @@ div.beginner #guideTxt{
 div.beginner #lectureList{
     margin-top: 20px;
     height: 320px;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+div.beginner #lectureBlock1{
+    width: 20%;
+}
+div.beginner #lectureBlock2{
+    width: 20%;
+}
+div.beginner #lectureBlock3{
+    width: 20%;
+}
+div.beginner #lectureBlock4{
+    width: 20%;
+}
+div.beginner #lectureBlock5{
+    width: 20%;
 }
 
 div.roadmap{
@@ -308,15 +386,31 @@ div.roadmap #guideTxt{
 
 div.roadmap #lectureList{
     margin-top: 20px;
+    width: 100%;
     height: 250px;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+div.roadmap #lectureBlock1{
+    width: 25%;
+}
+div.roadmap #lectureBlock2{
+    width: 25%;
+}
+div.roadmap #lectureBlock3{
+    width: 25%;
+}
+div.roadmap #lectureBlock4{
+    width: 25%;
 }
 
 div.article{
     width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 120px;
+    overflow-x: hidden;
 }
 
 div.article #catchPraise{
@@ -326,15 +420,21 @@ div.article #catchPraise{
 
 div.article #articleList{
     margin-top: 20px;
-    height: 244px;
-    background-color: lightblue;
+    height: 329px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+}
+
+div.article #articleBlock{
+    width: fit-content;
 }
 
 div.newLecture{
     width: 70%;
     padding-left: 15%;
     padding-right: 15%;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 div.newLecture #catchPraise{
@@ -345,7 +445,24 @@ div.newLecture #catchPraise{
 div.newLecture #lectureList{
     margin-top: 20px;
     height: 320px;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+div.newLecture #lectureBlock1{
+    width: 20%;
+}
+div.newLecture #lectureBlock2{
+    width: 20%;
+}
+div.newLecture #lectureBlock3{
+    width: 20%;
+}
+div.newLecture #lectureBlock4{
+    width: 20%;
+}
+div.newLecture #lectureBlock5{
+    width: 20%;
 }
 
 div.reviews{
