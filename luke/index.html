@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <hmtl lang="ko">
-
   <head>
     <meta charset="utf-8">
     <title>인프런 - 미래의 동료들과 함께 성장하는 곳 | IT 정보 플렛폼</title>
@@ -8,10 +7,11 @@
     <link rel="stylesheet" href="CSS/navigationBar.css">
     <link rel="stylesheet" href="CSS/root.css">
     <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheey" href="CSS/banner.CSS"
-
+    <link rel="stylesheet" href="CSS/search-bar.css">
+    <link rel="stylesheet" href="CSS/tag-section.css">
+    <link rel="stylesheet" href="CSS/curses.css">
+    <link rel="stylesheet" href="CSS/roodmap.css">
   </head>
-
   <body>
     <div id="root">
       <!-- inflab -->
@@ -53,7 +53,8 @@
           <div class="navbar container">
             <div class="content">
               <div class="brand_header">
-                <svg width="110" id="icon_brand_logo" class="brand_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 433 90">
+                <svg width="110" id="icon_brand_logo" class="brand_logo" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 433 90">
                   <path class="A"
                     d="M79.1 31.6c-2-4.6-4.7-8.7-8.1-12.2-3.5-3.5-7.5-6.3-12.1-8.3S49.3 8 43.9 8c-5.2 0-10.2.9-14.9 2.9s-8.8 4.7-12.4 8.1c-3.6 3.5-6.4 7.5-8.4 12.1A37.14 37.14 0 0 0 5.1 46c0 5.2.9 10.2 2.9 14.9s4.7 8.8 8.2 12.4 7.6 6.4 12.2 8.4c4.7 2 9.6 3.1 14.9 3.1l38.3.3.3-38.5c.1-5.3-.9-10.3-2.8-15zM74 77.4l-30.7-.3c-4.2 0-8.2-.9-11.9-2.5s-7-3.9-9.8-6.7A32.99 32.99 0 0 1 15 58c-1.6-3.8-2.3-7.7-2.3-11.9 0-4.3.9-8.3 2.5-12s3.9-6.9 6.7-9.7c2.9-2.8 6.2-4.9 9.9-6.5 3.8-1.6 7.7-2.3 11.9-2.3 4.3 0 8.3.9 12 2.5s6.9 3.8 9.7 6.7c2.8 2.8 4.9 6.1 6.5 9.8s2.3 7.7 2.3 12L74 77.4z">
                   </path>
@@ -115,10 +116,10 @@
       <!-- header -->
       <!-- main -->
       <main id="main">
-        <section id="main_page" class="main">
+        <section id="main_page">
           <!-- 상단배너 -->
-          <section class="main banner">
-            <div class="banner imgs">
+          <section class="banner">
+            <div class="banner-imgs">
               <img src="/luke/image/main_banner_1.png">
             </div>
             <div class="container-one">
@@ -126,64 +127,533 @@
                 <div class="swiper-controller">
                   <div class="index-wrapper">
                     <span class="part-index">1</span>
+                    /
+                    <span class="total_index">7</span>
+                  </div>
+                  <div class="control-wrapper">
+                    <div class="control-button-one">〈</div>
+                    <div class="control-button-two">||</div>
+                    <div class="control-button-three">〉</div>
                   </div>
                 </div>
+                <div class="divider"></div>
+                <div class="swiper-bullet-container">
+                  <div class="swiper-bullet">지식공유 신청</div>
+                  <div class="swiper-bullet">신규 강의</div>
+                  <div class="swiper-bullet">왕초보 모여라</div>
+                  <div class="swiper-bullet">입문 로드맵</div>
+                  <div class="swiper-bullet">Top 50</div>
+                  <div class="swiper-bullet">인프런은</div>
+                  <div class="swiper-bullet">인프런 동료찾기</div>
+                </div>
+                <div class="swiper-togle-button"></div>
               </div>
             </div>
           </section>
           <!-- 상단배너 -->
           <!-- 검색창 -->
-          <section class="main search-bar">
-
+          <section class="search">
+            <div class="search-bar">
+              <div class="search-container">
+                <div class="search-content">
+                  <h1>배우고, 나누고, 성장하세요.</h1>
+                  <div class="search-wrapper">
+                    <input class="search-input" type="text" placeholder="배우고 싶은 지식을 입력해보세요.">
+                    <button class="search-submit">⚲</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- 검색창 -->
           <!-- 인기 태그 -->
-          <section class="main tag-section">
-
+          <section class="tag-section">
+            <div class="tag-container">
+              <div class="tag-item">#MVC</div>
+              <div class="tag-item">#Spring Boot</div>
+              <div class="tag-item">#JAP</div>
+              <div class="tag-item">#python</div>
+              <div class="tag-item">#Java</div>
+              <div class="tag-item">#Spring</div>
+              <div class="tag-item">#JavaScript</div>
+            </div>
           </section>
           <!-- 인기 태그 -->
           <!-- 무료 강의 리스트 -->
-          <section class="main free-curses">
-
+          <section class="free-curses">
+            <div class="curses">
+              <div class="curses-container">
+                <div class="curses-list">
+                  <div class="curses-header">
+                    <div>
+                      <a>
+                        <h1>무료강의? 오히려 좋아 ✨ ＞</h1>
+                      </a>
+                      <p class="subtext">무료 강의부터 가볍게 시작해 보세요.</p>
+                    </div>
+                  </div>
+                  <div class="curses-content">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- 무료 강의 리스트 -->
           <!-- 웰컴 강의 리스트 -->
-          <section class="main welcome-curses">
-
+          <section class="welcome-curses">
+            <div class="curses">
+              <div class="curses-container">
+                <div class="curses-list">
+                  <div class="curses-header">
+                    <div>
+                      <a>
+                        <h1>왕초보도 할 수 있어요 💪 ＞</h1>
+                      </a>
+                      <p class="subtext">이미 점증된 쉽고 친절한 입문 강의!!</p>
+                    </div>
+                  </div>
+                  <div class="curses-content">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- 웰컴 강의 리스트 -->
           <!-- 로드맵 -->
-          <section class="main rodmap">
-
+          <section class="rodmap">
+            <div class="rodmap-container">
+              
+            </div>
           </section>
           <!-- 로드맵 -->
           <!-- 큐레이션 -->
-          <section class="main curation">
+          <section class="curation">
 
           </section>
           <!-- 큐레이션 -->
           <!-- 신규 강의 리스트 -->
-          <section class="main new-curses">
-
+          <section class="new-curses">
+            <div class="curses">
+              <div class="curses-container">
+                <div class="curses-list">
+                  <div class="curses-header">
+                    <div>
+                      <a>
+                        <h1>따끈따끈, 신규 강의를 만나보세요! 🙋‍♀️ 🆕 ＞</h1>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="curses-content">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide" role="group" aria-label="1 / 12"
+                        style="width: 231.2px; margin-right:6px;">
+                          <div class="curses-card">
+                            <a>
+                              <div class="card-image">
+                                <img loading="lazy" src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" data-src="https://cdn.inflearn.com/public/courses/329211/cover/ea485515-6665-4e5c-acd7-157c2b8b08f3/infcon-apply-main.png" class="swiper-lazy" alt="infcon-apply-main.png">
+                              </div>
+                              <div class="curses-title">
+                                인프콘 2022 다시보기
+                              </div>
+                              <div class="instructor">
+                                인프런
+                              </div>
+                              <div class="rating">
+                                <div class="rating-star"></div>
+                                <span class="review-count">(11)</span>
+                              </div>
+                              <div class="price">무료</div>
+                              <div class="tags">
+                                <span class="tag" style="background-color: hsl(321,63%,90%)">+12600명</span>
+                                <span class="tag" style="background-color: hsl(182,75%,94%)">업데이트</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- 신규 강의 리스트 -->
           <!-- 수강평 -->
-          <section class="main review">
+          <section class="review">
 
           </section>
           <!-- 수강평 -->
           <!-- 하단배너 -->
-          <section class="main banner2">
+          <section class="banner2">
 
           </section>
           <!-- 하단배너-->
           <!-- 비투비 -->
-          <section class="main group-section">
+          <section class="group-section">
 
           </section>
           <!-- 비투비 -->
           <!-- 신청하기 -->
-          <section class="main apply">
+          <section class="apply">
 
           </section>
           <!-- 신청하기 -->
