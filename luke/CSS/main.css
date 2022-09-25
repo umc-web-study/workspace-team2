@@ -2,6 +2,10 @@
   border-bottom: 1px solid #e9ecef;
 }
 
+.banner-imgs{
+  overflow: hidden;
+}
+
 .container-one{
   max-width: 1200px;
   padding: 0 10px;
