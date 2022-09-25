@@ -1,0 +1,551 @@
+div.header {
+    width: 60%;
+    height: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.header .item{
+    float: left;
+    width: 5%;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+div.header .item_right{
+    float: right;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+hr.header_hr{
+    width: 100%;
+}
+
+div.menuBar {
+    width: 60%;
+    height: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.menuBar .item{
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+div.menuBar .right_item{
+    float: right;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#top_search{
+    width: 120px;
+    height: 30px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    background-image: url('./img/main/search.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+#login_btn{
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+#signup_btn{
+    border-radius: 5px;
+    background-color: red;
+    border: 1px solid gray;
+    color: white;
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+}
+
+div.benner_img{
+    overflow: hidden;
+    width: fit-content;
+    height: 30%;
+}
+
+div.benner_img #benner{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    
+  }
+  
+
+div.benner_control{
+    float: left;
+    width: 70%;
+    height: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 10px;
+}
+
+div.control_main{
+    float: left;
+    width: 11%;
+    height: 40px;
+    text-align: left;
+    border-radius: 100px;
+    border-style: solid 1px;
+    background-color: gray;
+}
+
+div.control_event{
+    float: left;
+    width: 80%;
+    height: 40px;
+    border-left: 1px solid gray;
+    margin-left: 1%;
+    display: flex;
+    justify-content: left;
+}
+
+div.control_event #events1{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events2{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events3{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events4{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events5{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events6{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event #events7{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.center_search{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.center_search #searchWindow{
+    background-color: lightgoldenrodyellow;
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    background-image: url('./img/main/search.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 480px;
+    padding-left: 15px;
+    font-size: 15pt;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#searchTag {
+    display: flex;
+    justify-content: center;
+    float: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10px;
+}
+
+#Tag{
+    float: left;
+    font-size: 12pt;
+    margin-right: 10px;
+    border-radius: 50px;
+    border-style: none;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+div.Freelecture{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 100px;
+}
+
+div.Freelecture #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.Freelecture #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.Freelecture #lectureList{
+    margin-top: 20px;
+    height: 320px;
+    background-color: lightblue;
+}
+
+div.beginner{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.beginner #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.beginner #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.beginner #lectureList{
+    margin-top: 20px;
+    height: 320px;
+    background-color: lightblue;
+}
+
+div.roadmap{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.roadmap #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.roadmap #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.roadmap #lectureList{
+    margin-top: 20px;
+    height: 250px;
+    background-color: lightblue;
+}
+
+div.article{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 120px;
+}
+
+div.article #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.article #articleList{
+    margin-top: 20px;
+    height: 244px;
+    background-color: lightblue;
+}
+
+div.newLecture{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.newLecture #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.newLecture #lectureList{
+    margin-top: 20px;
+    height: 320px;
+    background-color: lightblue;
+}
+
+div.reviews{
+    width: 70%;
+    height: 779px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.reviews #accountNum{
+    float: left;
+    width: 50%;
+    height: 779px;
+}
+
+div.reviews #accountNum #buttons{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.reviews #accountNum #buttons #left{
+    font-size: 15pt;
+    background-color: white; 
+    border-color: lightgreen;
+    padding: 10px;
+}
+
+div.reviews #accountNum #buttons #right{
+    font-size: 15pt; 
+    margin-left: 5px; 
+    background-color: white;
+    border-color: lightgreen;
+    padding: 10px;
+}
+
+div.reviews #reviewList{
+    float: left;
+    width: 50%;
+    height: 779px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+div.reviews #reviewList::-webkit-scrollbar{
+    display:none;
+}
+
+div.reviews #reviewBlock{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(249,249,249, 1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.footterBenner{
+    background-image: url("https://cdn.inflearn.com/public/main_sliders/38744ba0-b12a-491a-9ca2-43375c3905ba/share-you.jpg");
+    height: 230px;
+}
+
+div.footterBenner #moreBtn{
+    margin-left: 30px;
+    padding: 10px;
+    margin-left: 15%;
+    font-size: 13pt;
+    color: lightgreen;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+div.companys{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 100px;
+}
+
+div.companys #textWrapper{
+    width: 100%;
+    text-align: center;
+}
+
+div.companys #imgWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.companys #companyLogo{
+    float: left;
+    margin-right: 20px;
+}
+
+div.service{
+    width: 70%;
+    height: 426px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+    background-color: rgb(249,249,249, 1)
+}
+
+div.service #textWrapper{
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+div.service #serviceWrapper{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+div.service #serviceList{
+    float: left;
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-style: ridge;
+    border-color: transparent;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+div.service #serviceList p{
+    margin-top: 40px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+div.service #serviceList p span{
+    font-size: 15pt; font-weight: bolder;
+}
+
+div.service #btn{
+    vertical-align: bottom;
+    width: fit-content;
+    background-color: rgb(29,192,120, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+div.footer{
+    width: 100%;
+    background-color: rgb(48,55,64, 1);
+    padding-left: 40px;
+}
+
+div.footer #tableWrapper{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: left;
+    padding-top: 40px;
+}
+
+div.footer #listBlock{
+    width: 20%;
+}
+
+div.footer #listHeader{
+    color: white;
+    margin-bottom: 20px;
+}
+
+div.footer #listBody{
+    color: rgb(163,164,166, 1);
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+div.footer #infoWrapper{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+div.footer #infoLeft a{
+    color: rgb(163,164,166, 1);
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgb(163,164,166, 1);
+    cursor: pointer;
+}
