@@ -3,3 +3,26 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.rodmap-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.subtext-red{
+  color: red;
+  font-size: small;
+}
+
+.rodmap-title-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rodmap-title{
+  font-weight: 700;
+}
+
