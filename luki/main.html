@@ -45,9 +45,9 @@
         <div class="benner_control">
             <div class="control_main">
                 <p style="color: white ; font-size: 15pt; float: left; width: 20%; height: 15pt; margin-top: 10px; margin-left: 5%; vertical-align: middle;" id = "main_control_text">1/7</p>
-                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_right" src="./img/main/control_right.png" style="height: 100%;" onclick="controlMainRight()"></a>
-                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_center" src="./img/main/control_center3.png" style="height: 100%;"></a>
-                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_left" src="./img/main/control_left.png" style="height: 100%;" onclick="controlMainLeft()"></a> 
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_right" src="./img/main/control_right.png" style="height: 100%; cursor: pointer;" onclick="controlMainRight()"></a>
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_center" src="./img/main/control_center3.png" style="height: 100%; cursor: pointer;" onclick="stopAndProgressDiv(this)"></a>
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_left" src="./img/main/control_left.png" style="height: 100%; cursor: pointer;" onclick="controlMainLeft()"></a> 
             </div>
             <div class="control_event">
                 <div id="events1" onclick="E1()">
@@ -71,9 +71,46 @@
                 <div id="events7" onclick="E7()">
                     인프런 동료 찾기
                 </div>
+                <div id="control_eventList">
+                    <img src="./img/main/event_close.png" onclick="eventListButton(this)">
+                </div>
             </div>
         </div>
-        <hr style="margin-bottom: 2.5%;">
+        <div class="center_hr" style="position: relative;">
+            <hr style="margin-bottom: 2.5%;">
+            <div id="eventListDiv" style="visibility: hidden;">
+                <div id="event_list_text" style="display: flex; justify-content:space-between">
+                    <p style="margin-left: 20px; font-size: 12pt; font-weight: bold; width: 30%;">진행중인 모든 이벤트</p>
+                    <p style="margin-right: 20px; text-decoration: underline; color: rgb(214,219,224, 1); cursor: pointer;" onclick="eventCloseText()">닫기</p>
+                </div>
+                
+                <hr>
+                <div class="control_event1" style="border-left: none;">
+                    <div id="events1" onclick="E1()">
+                        지식공유신청
+                    </div>
+                    <div id="events2" onclick="E2()">
+                        왕초보 모여라
+                    </div>
+                    <div id="events3" onclick="E3()">
+                        신규 강의
+                    </div>
+                    <div id="events4" onclick="E4()">
+                        Top 50
+                    </div>
+                    <div id="events5" onclick="E5()">
+                        입문 로드맵
+                    </div>
+                    <div id="events6" onclick="E6()">
+                        인프런은
+                    </div>
+                    <div id="events7" onclick="E7()">
+                        인프런 동료 찾기
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div style="text-align: center; font-size: 20pt; width: 100%;">
             인프런에서 가치를 높이세요
         </div>
@@ -753,7 +790,12 @@
                         주소: 경기도 성남시 분당구 대왕판교로 660 유스페이스 1A동 405호<br><br>©INFLAB. ALL RIGHTS RESERVED</p>
                 </div>
                 <div id="infoRight">
-
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_1.png"></button>
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_2.png"></button>
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_3.png"></button>
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_4.png"></button>
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_5.png"></button>
+                    <button type="button" onclick="window.open('https://www.naver.com/')"><img src="./img/main/footer_6.png"></button>
                 </div>
             </div>
         </div>

@@ -113,16 +113,27 @@ div.benner_img{
 div.benner_img #benner{
     width: 100%;
   }
-  
+
+#eventListDiv{
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    left: 45%;
+    height: 140px;
+    width: 42.9%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(233,236,239, 1);
+    background-color: white;
+}
 
 div.benner_control{
-    float: center;
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 div.control_main{
@@ -143,7 +154,7 @@ div.control_event{
     justify-content: left;
 }
 
-div.control_event #events1{
+#events1{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -152,7 +163,7 @@ div.control_event #events1{
     cursor: pointer;
 }
 
-div.control_event #events2{
+#events2{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -161,7 +172,7 @@ div.control_event #events2{
     cursor: pointer;
 }
 
-div.control_event #events3{
+#events3{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -170,7 +181,7 @@ div.control_event #events3{
     cursor: pointer;
 }
 
-div.control_event #events4{
+#events4{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -179,7 +190,7 @@ div.control_event #events4{
     cursor: pointer;
 }
 
-div.control_event #events5{
+#events5{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -188,7 +199,7 @@ div.control_event #events5{
     cursor: pointer;
 }
 
-div.control_event #events6{
+#events6{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
@@ -197,13 +208,24 @@ div.control_event #events6{
     cursor: pointer;
 }
 
-div.control_event #events7{
+#events7{
     margin-left: 20px;
     padding: 10px;
     width: fit-content;
     border: 1px solid rgb(221,225,229, 1);
     border-radius: 50px;
     cursor: pointer;
+}
+
+div.control_event1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+div.control_event #control_eventList{
+    margin-left: 100px;
 }
 
 div.center_search{
@@ -637,7 +659,7 @@ div.service #btn{
 }
 
 div.footer{
-    width: 100%;
+    width: 98%;
     background-color: rgb(48,55,64, 1);
     padding-left: 40px;
 }
@@ -668,17 +690,37 @@ div.footer #listBody{
 }
 
 div.footer #infoWrapper{
-    width: 70%;
+    width: 60%;
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 40px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer #infoLeft{
+    width: auto;
 }
 
 div.footer #infoLeft a{
     color: rgb(163,164,166, 1);
     margin-left: 10px;
-    padding-left: 10px;
     border-left: 1px solid rgb(163,164,166, 1);
+    cursor: pointer;
+}
+
+div.footer #infoRight {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+div.footer #infoRight button{
+    width: 45px;
+    height: 45px;
+    margin: 0px;
+    background-color: rgb(48,55,64, 1);
+    border-style: none;
     cursor: pointer;
 }
