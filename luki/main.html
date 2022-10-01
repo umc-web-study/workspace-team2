@@ -44,10 +44,10 @@
         </div>
         <div class="benner_control">
             <div class="control_main">
-                <a style="color: white ; font-size: 15pt; float: left; width: 20%; height: 15pt; margin-top: 10px; margin-left: 5%; vertical-align: middle;">1/7</a>
-                <a style="height: 100%; width: 25%; float: right;"><img src="./img/main/control_right.png" style="height: 100%;"></a>
-                <a style="height: 100%; width: 25%; float: right;"><img src="./img/main/control_center3.png" style="height: 100%;"></a>
-                <a style="height: 100%; width: 25%; float: right;"><img src="./img/main/control_left.png" style="height: 100%;"></a> 
+                <p style="color: white ; font-size: 15pt; float: left; width: 20%; height: 15pt; margin-top: 10px; margin-left: 5%; vertical-align: middle;" id = "main_control_text">1/7</p>
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_right" src="./img/main/control_right.png" style="height: 100%;" onclick="controlMainRight()"></a>
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_center" src="./img/main/control_center3.png" style="height: 100%;"></a>
+                <a style="height: 100%; width: 25%; float: right;"><img id = "control_main_left" src="./img/main/control_left.png" style="height: 100%;" onclick="controlMainLeft()"></a> 
             </div>
             <div class="control_event">
                 <div id="events1" onclick="E1()">
@@ -112,9 +112,14 @@
                 무료 강의부터 가볍게 시작해 보세요
             </div>
             <div id="lectureList">
-                <div id="lectureBlock1">
-                    
+                <div id="lectureBlock1" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/Spring.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
                     </div>
@@ -130,8 +135,37 @@
                         업데이트
                     </div>
                 </div>
-                <div id="lectureBlock2">
+                <div id="lectureBlock2" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/Spring.png" style="width: 100%;">
+                    <div id="lectureName">
+                        스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
+                    </div>
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
+                    <div id="lectuerTeacher">
+                        김영한
+                    </div>
+                    <img src="./img/main/stars.png" style="object-fit: none; position: 0%, 0%;">
+                    <div id="price">무료</div>
+                    <div id="listenNum">
+                        +54000명
+                    </div>
+                    <div id="update">
+                        업데이트
+                    </div>
+                </div>
+                <div id="lectureBlock3" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
+                    <img src="./img/main/Spring.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
                     </div>
@@ -147,8 +181,14 @@
                         업데이트
                     </div>
                 </div>
-                <div id="lectureBlock3">
+                <div id="lectureBlock4" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/Spring.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
                     </div>
@@ -164,25 +204,14 @@
                         업데이트
                     </div>
                 </div>
-                <div id="lectureBlock4">
+                <div id="lectureBlock5" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/Spring.png" style="width: 100%;">
-                    <div id="lectureName">
-                        스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
                     </div>
-                    <div id="lectuerTeacher">
-                        김영한
-                    </div>
-                    <img src="./img/main/stars.png" style="object-fit: none; position: 0%, 0%;">
-                    <div id="price">무료</div>
-                    <div id="listenNum">
-                        +54000명
-                    </div>
-                    <div id="update">
-                        업데이트
-                    </div>
-                </div>
-                <div id="lectureBlock5">
-                    <img src="./img/main/Spring.png" style="width: 100%;">
                     <div id="lectureName">
                         스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술
                     </div>
@@ -208,8 +237,14 @@
                 이미 검증된 쉽고 친절한 입문 강의!!
             </div>
             <div id="lectureList">
-                <div id="lectureBlock1">
+                <div id="lectureBlock1" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/beginner.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         비전공자를 위한 진짜 입문 올인원 개<br>발 클래스
                     </div>
@@ -226,8 +261,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock2">
+                <div id="lectureBlock2" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/beginner.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         비전공자를 위한 진짜 입문 올인원 개<br>발 클래스
                     </div>
@@ -244,8 +285,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock3">
+                <div id="lectureBlock3" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/beginner.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         비전공자를 위한 진짜 입문 올인원 개<br>발 클래스
                     </div>
@@ -262,8 +309,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock4">
+                <div id="lectureBlock4" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/beginner.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         비전공자를 위한 진짜 입문 올인원 개<br>발 클래스
                     </div>
@@ -280,8 +333,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock5">
+                <div id="lectureBlock5" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/beginner.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         비전공자를 위한 진짜 입문 올인원 개<br>발 클래스
                     </div>
@@ -374,9 +433,14 @@
                 따끈따끈, 신규 강의를 만나보세요! >
             </div>
             <div id="lectureList">
-                <div id="lectureBlock1">
-                    
+                <div id="lectureBlock1" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/new.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         처음하는 딥러닝과 파이토치<br>(PyTorch)부트캠프 [차근차근인...</div>
                     <div id="lectuerTeacher">
@@ -391,9 +455,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock2">
-                    
+                <div id="lectureBlock2" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/new.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         처음하는 딥러닝과 파이토치<br>(PyTorch)부트캠프 [차근차근인...</div>
                     <div id="lectuerTeacher">
@@ -408,9 +477,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock3">
-                    
+                <div id="lectureBlock3" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/new.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         처음하는 딥러닝과 파이토치<br>(PyTorch)부트캠프 [차근차근인...</div>
                     <div id="lectuerTeacher">
@@ -425,9 +499,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock4">
-                    
+                <div id="lectureBlock4" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/new.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         처음하는 딥러닝과 파이토치<br>(PyTorch)부트캠프 [차근차근인...</div>
                     <div id="lectuerTeacher">
@@ -442,9 +521,14 @@
                     </div>
                     <div id="priceDown">할인중</div>
                 </div>
-                <div id="lectureBlock5">
-                    
+                <div id="lectureBlock5" style="position: relative; height: 100%;" onmouseover="revealDiv(this)" onmouseleave="hideDiv(this)">
                     <img src="./img/main/new.png" style="width: 100%;">
+                    <div class="hidden_div" style="display: none;">
+                        <p>스프링 입문 - 코드로 배우는 스프링<br> 부트, 웹 MVC, DB 접근 기술</p>
+                        <p style="color: rgb(164,198,211)">초급</p>
+                        <p style="color: rgb(164,198,211)">백엔드, 웹 개발</p>
+                        <p style="color: rgb(164,198,211)">Java, Spring, MVC</p>
+                    </div>
                     <div id="lectureName">
                         처음하는 딥러닝과 파이토치<br>(PyTorch)부트캠프 [차근차근인...</div>
                     <div id="lectuerTeacher">
