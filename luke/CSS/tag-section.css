@@ -1,0 +1,30 @@
+.tag-secton{
+  padding-top: 5px;
+  margin-top: -18px;
+}
+
+.tag-container{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+  margin: 0 auto;
+  max-width: 580px;
+  width: 100%;
+}
+
+.tag-item{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -.3px;
+  font-size: 12px;
+  margin: 4px;
+  padding: 0 12px;
+  height: 28px;
+  color: #3e4042;
+  font-weight: 500;
+  border-radius: 20px;
+  background: #f1f3f5;
+  cursor: pointer;
+}
