@@ -21,6 +21,12 @@ section.apply .title {
   font-size: 1.5rem;
 }
 
+section.apply .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section.apply .subtext{
   font-weight: 400;
   color: #757575;
