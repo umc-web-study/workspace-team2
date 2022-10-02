@@ -18,6 +18,10 @@ ul {
     padding:0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section.upper-bar .upper-nav ul {
     display: flex;
 }
@@ -114,8 +118,12 @@ section.upper-bar .upper-nav .upper-link-left svg {
     z-index: 74;
     height: 64px;
     display:block;
+}
 
-    margin:10px;
+.nav-left-wrapper {
+  display:flex;
+  margin-right: 300px;
+  margin-left: 150px;
 }
 
 .nav-bar {
@@ -161,6 +169,8 @@ section.upper-bar .upper-nav .upper-link-left svg {
     background: #f6f6f6;
     color:#5f5f5f;
     border: 1px solid transparent;
+    width:128px;
+    height:24px;
 }
 
 .nav-right-item {
@@ -187,11 +197,6 @@ section.upper-bar .upper-nav .upper-link-left svg {
     border-radius:3px;
 }
 
-
-.empty{
-    color:#fff;
-    display:block;
-}
 
 
 /*banner*/
@@ -275,6 +280,8 @@ section.upper-bar .upper-nav .upper-link-left svg {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
   background-color: #fff;
   cursor: pointer;
+  text-align: center;
+  line-height: 45px;
 }
 
 
@@ -367,19 +374,42 @@ section.upper-bar .upper-nav .upper-link-left svg {
 
 
 
-  /*무료강의*/
 
-  .curses{
-    padding: 24px 0;
+
+
+  /*강의 리스트 & 로드맵 & 큐레이션 & 리뷰*/
+
+  .free-course, .welcome-course, .roadmap, .curation, .new-course, .review {
+    padding-top:30px;
+    padding-bottom: 30px;
+    display:block;
   }
   
-  .curses-container{
+  .free-course-container, .welcome-course-container, .roadmap-container, .new-course-container{
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
   }
+
+  .review-container {
+    max-width: 1200px;
+    padding:0 10px;
+    margin: 0 auto;
+    position:relative;
+    width:auto;
+  }
+
+  .curation-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .curation-container::-webkit-scrollbar {display: none;}
   
-  .curses-header{
+  .free-course-header, .welcome-course-header, .roadmap-header, .new-course-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -389,4 +419,367 @@ section.upper-bar .upper-nav .upper-link-left svg {
   .subtext{
     font-weight: 400;
     color: #757575;
+  }
+
+  .course-tag {
+    color:#fa4c3d;
+    font-size:12px;
+    font-weight: 700;
+  }
+
+  .free-course-item-wrapper, .welcome-course-item-wrapper, .new-course-item-wrapper {
+    width:231px;
+    position:relative;
+    display:flex;
+    box-sizing: content-box;
+  }
+
+  .roadmap-item-wrapper {
+    width:290px;
+    position:relative;
+    display:flex;
+    box-sizing: content-box;
+  }
+
+  .curation-item-wrapper {
+    width:422px;
+    position:relative;
+    display:flex;
+    box-sizing: content-box;
+  }
+
+  .free-course-item-wrapper > a {
+    width: 231px;
+    height: 316px;
+    margin-right: 6px;
+  }
+
+  .welcome-course-item-wrapper > a {
+    width: 231px;
+    height: 316px;
+    margin-right: 6px;
+  }
+
+  .roadmap-item-wrapper > a {
+    width: 291px;
+    height: 248px;
+    margin-right: 6px;
+  }
+
+  .curation-item-wrapper > a {
+    width: 422px;
+    height: 320px;
+    margin-right: 6px;
+    margin-left: 4px;
+  }
+
+  .new-course-item-wrapper > a {
+    width: 422px;
+    height: 320px;
+    margin-right: 6px;
+    margin-left: 4px;
+  }
+
+  .course-ribbon {
+    position : absolute;
+    padding: .125rem;
+    top:5%;
+    right:0;
+    color:#fff;
+    background: #ff6318;
+    font-size:.875rem;
+    font-weight:700;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #fff;
+    border-right: none;
+  }
+
+  .fas {
+    font-family: Font Awesome\ 6 Pro;
+    font-weight: 900;
+  }
+
+  .item-image > img{
+
+    height:150px;
+  }
+
+  .curation-item-image > img {
+    height:150px;
+    width:422px;
+    height:220px;
+  }
+
+  .item-content > .course-title {
+    font-weight: 700;
+    height:4rem;
+    font-size: .95rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .instructor {
+    color:#7d7d7d;
+    font-size: .9rem;
+  }
+
+   .item-content {
+    padding-top:1rem;
+  }
+
+  .roadmap-content {
+    font-size: .85rem;
+    font-weight: 800;
+  }
+
+  .curation-item-content > .curation-content-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    color:#333;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    width:422px;
+    height: 27px;
+  }
+
+  .curation-item-content > .curation-content-text {
+    font-size: 1rem;
+    color: #595959;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3rem;
+    width: 100%;
+  }
+
+  .star {
+    position:relative;
+    align-items: center;
+  }
+
+  .star-count {
+    position:absolute;
+    margin-left:5px;
+    font-size:.5rem;
+    bottom:.3rem;
+    color:#3e4042
+  }
+
+  .price {
+    font-weight: 700;
+    color:#175cbe;
+  }
+
+  .price > del {
+    color:#595959;
+    font-weight: 500;
+    font-size: .9rem;
+    opacity: .75;
+  }
+
+  .price > .pay_price {
+    margin-left: .25rem;
+  }
+
+  .tags {
+    align-items: center;
+    display:flex;
+  }
+
+  .tag {
+    border-radius: 4px;
+    text-align: center;
+    color:#454545;
+    height:2em;
+    padding-left: .75em;
+    padding-right: .75em;
+    font-size: .75rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
+  }
+
+
+
+  /*강의 hover*/
+  .free-course-item-hover {
+    display:none;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    margin:auto;
+    width: 230px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, .9);
+    color:#fff;
+    font-size:13px;
+  }
+
+  .hover-click {
+    position: absolute;
+    padding: .5rem;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    color:#fff;
+  }
+
+  a .free-course-item-hover::after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:1;
+    opacity:0;
+    transition:all .35s;
+}
+
+  .free-course-item-hover :hover {
+    bottom:50%;
+  }
+
+  .free-course-item-hover :hover .hover-click::after {
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+  /*리뷰*/
+
+  .review-content {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .review-content-left {
+    max-width: 480px;
+    width:100%;
+    padding: 40px 16px 40px 0;
+  }
+
+  .review-content-left-title {
+    color:#242424;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.33;
+    font-size: 2.25rem;
+  }
+
+  .review-content-left-title > .user-cnt {
+    color:#47c880;
+  }
+
+  .review-content-left-text {
+    color:#757575;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+
+  .review-content-left-btn {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .review-content-left-btn-link {
+    font-size: 16px;
+    color:#333;
+    border-radius: 3px;
+    border: 1px solid #1dc078;
+    background-color: #fff;
+    height: auto;
+    line-height: 1;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    padding:10px 16px;
+    vertical-align: top;
+    position:relative;
+    text-align: center;
+  }
+
+
+  .review-content-right {
+    max-width: 590px;
+    width: 100%;
+  }
+
+  .review-content-swiper-container {
+    height:480px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+  }
+
+  .review-content-swiper-wrapper {
+    flex-direction: column;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    overflow: auto;
+    scroll-behavior:smooth;
+  }
+
+  .review-content-swiper-wrapper::-webkit-scrollbar {
+    display: none;
+
+  }
+
+  .review-content-swiper-box {
+    background-color: #f9f9f9;
+    width: auto;
+    height: auto;
+    margin:5px;
+    border-radius: 4px;
+    color:#333;
+    padding:16px;
+    position:relative;
+    box-shadow:0 2px 3px rgb(0 10 18 / 10%), 0 0 0 1px rgb(0 10 18 / 10%);
+    display: block;
+  }
+
+  .box-header {
+    margin-bottom: 16px;
+  }
+
+  .box-header-name {
+    color:#757570;
+    margin-right: 8px;
+  }
+
+  .box-header-data {
+    color:#979797;
+  }
+
+  .box-text-title {
+    display: flex;
+    align-items: center;
+    color:#333;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  .box-text-text {
+    color:#333;
+    font-size:1rem;
+
   }
