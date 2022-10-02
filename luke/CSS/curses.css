@@ -30,6 +30,16 @@
   z-index: 1;
 }
 
+.rating{
+  display: flex;
+  align-items: center;
+}
+
+.rating .review-count{
+  font-size: 0.75rem;
+  color: #4a4a4a;
+}
+
 .swiper-wrapper{
   position: relative;
   width: 100%;

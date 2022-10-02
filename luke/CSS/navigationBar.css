@@ -17,7 +17,7 @@ nav.navbar .container .content{
   padding: 20px;
 }
 
-nav.navbar .container .content .navbar-menu{
+nav.navbar .navbar-menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,7 @@ a.navbar-item {
 
 .navbar-right{
   display: flex;
+  align-items: center;
   height: 100%;
 }
 
@@ -47,13 +48,42 @@ a.navbar-item {
   padding-right: 0;
 }
 
-navbar-item:first-of-type{
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
 .navbar-search{
+  padding: 0 8px;
   flex-shrink: 1;
   max-width: 164px;
   width: auto;
+  display: flex;
+  color: #4a4a4a;
+}
+
+input{
+  height: auto;
+  border-radius: 3px;
+  box-shadow: none;
+  background: #f6f6f6;
+  border: 1px;
+  width: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: flex-start;
+  position: relative;
+  padding: 5px;
+}
+
+.navbar-right .buttons{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .buttons .button-signin{
+  border: 1px solid #dbdbdb;
+  height: auto;
+  margin-right: 0.5rem;
+  padding: 6px;
+  color: #363636;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
 }
