@@ -81,3 +81,8 @@
   background-color: #fff;
   cursor: pointer;
 }
+
+section#main_page .container {
+  max-width: 1200px;
+  padding: 0;
+}
