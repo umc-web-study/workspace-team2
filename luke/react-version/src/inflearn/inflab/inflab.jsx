@@ -1,5 +1,5 @@
 import "./inflab.css";
-import "../root.css";
+import "../roots/root.css";
 
 
 function Inflab() {
