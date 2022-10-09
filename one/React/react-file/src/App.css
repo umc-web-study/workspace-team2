@@ -1,0 +1,202 @@
+* {
+  box-sizing: inherit;
+  margin:0px;
+  padding:0px;
+}
+
+header {
+  display: block;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+
+body {
+overflow-x: hidden;
+}
+
+section.upper-bar .upper-nav ul {
+  display: flex;
+}
+
+section.upper-bar .upper-nav li {
+  display: flex;
+  align-items: center;
+}
+
+section.upper-bar header {
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+/*section 태그 style*/
+section.upper-bar {
+  position: sticky;
+  z-index: 74;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #f1f3f5;
+  z-index: 30;
+}
+
+/*section 안의 div style*/
+section.upper-bar .upper-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1200px;
+  color: #616568;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -.3px;
+  font-size: 14px;
+}
+
+
+
+/*"교육" 링크 style*/
+section.upper-bar .upper-nav .upper-link-left a.active {
+  font-weight: 700;
+  color: #1b1c1d;
+}
+
+/*교육, 채용 사이 bar*/
+section.upper-bar .upper-nav li:not(:last-child):after {
+  content: "";
+  display: block;
+  margin: 0 8px;
+  width: 1px;
+  height: 12px;
+  background: #d5dbe2;
+}
+
+/*section 왼쪽 링크 style*/
+section.upper-bar .upper-nav .upper-link-left a {
+  display: flex;
+  align-items: center;
+  margin-right: 2px;
+  font-weight: 500;
+  color: #858a8d;
+}
+
+/*section 오른쪽 링크 style*/
+section.upper-bar .upper-link-right a {
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -.3px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  color: #000000;
+}
+
+/*이미지랑 링크 사이 여백 주기*/
+section.upper-bar .upper-nav .upper-link-left svg {
+  margin:4px;
+}
+
+
+
+
+/*nav-bar style*/
+
+.header {
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 74;
+  height: 64px;
+  display:block;
+}
+
+.nav-left-wrapper {
+  display:flex;
+  margin-right: 300px;
+  margin-left: 150px;
+}
+
+.nav-bar {
+  display: block;
+}
+
+.content {
+  display:flex;
+}
+
+.logo {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.nav-left{
+  display: flex;
+}
+
+.nav-left-item {
+  margin: 5px 10px;
+  border: 5px 10px;
+  padding: 5px 10px;
+}
+
+.nav-right {
+  display:flex;
+  height: 100%;
+  padding:5px;
+  float:right;
+}
+
+.search {
+  padding:0px 8px;
+  margin:8px;
+}
+
+.input {
+  border-radius:3px;
+  box-shadow: none;
+  background: #f6f6f6;
+  color:#5f5f5f;
+  border: 1px solid transparent;
+  width:128px;
+  height:24px;
+}
+
+.nav-right-item {
+  margin:8px 5px;
+  text-align: center;
+}
+
+.sign-up {
+  margin:8px 8px;
+  text-align: center;
+  border:1px solid #dbdbdb;
+  border-radius:3px;
+  padding:4px;
+
+}
+
+.join {
+  background-color: #ff7867;
+  border: 1px solid #dbdbdb;
+  margin:8px;
+  color:#fff;
+  text-align: center;
+  padding:4px;
+  border-radius:3px;
+}
