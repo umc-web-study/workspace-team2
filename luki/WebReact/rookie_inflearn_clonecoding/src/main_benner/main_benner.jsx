@@ -54,32 +54,32 @@ class MainBenner extends Component{
                 <div>
                     <hr style={{marginTop: '1rem'}}/>
                 </div>
-                <div>
+                <div className={styles.center_flex}>
                     <div className={styles.center_catch}>
                         <p>인프런에서 가치를 높이세요</p>
                     </div>
                     <div className={styles.center_search}>
-                        <input id={styles.searchWindow} type="search" placeholder="배우고 싶은 지식을 입력해보세요"/>
-                        <div id={styles.searchTag}>
-                            <div id={styles.Tag}>
+                        <input id={styles.search_window} type="search" placeholder="배우고 싶은 지식을 입력해보세요"/>
+                        <div id={styles.search_tag}>
+                            <div id={styles.tag}>
                                 #MVC
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #SpringBoot
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #JPA
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #Python
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #Java
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #Spring
                             </div>
-                            <div id={styles.Tag}>
+                            <div id={styles.tag}>
                                 #JavaScript
                             </div>
                         </div>

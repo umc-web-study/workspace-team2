@@ -4,10 +4,6 @@ import styles from './main_header.module.css';
 
 class MainHeader extends Component{
     render() {
-        const topSearchImage ={
-            backgroundImage: "url('../public/img/main/search.png')"
-        }
-
         return (
             <section>
                 <div className={styles.header} >
@@ -32,11 +28,11 @@ class MainHeader extends Component{
                     </div>
                     <div className={styles.item} ><h3>강의</h3></div>
                     <div className={styles.item}><h3>로드맵</h3></div>
-                    <div className={styles.item}><h3>멘토링</h3></div>
+                    <div  className={styles.item}><h3>멘토링</h3></div>
                     <div className={styles.item}><h3>커뮤니티</h3></div>
                     <div className={styles.item}><h3>인프런</h3></div>
                     <div className={styles.right_item_search}>
-                        <input type="search" id={styles.top_search} style={topSearchImage}/>
+                        <input type="search" id={styles.top_search}/>
                     </div>
                     <div className={styles.right_item}>
                         <button type="button" id={styles.login_btn}>로그인</button>
