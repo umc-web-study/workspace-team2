@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './main_lecture.module.css';
 
-class MainLecture extends Component {
-    
-    render() {
-        return(
-            <section className={styles.free_flex}>
+function MainLecture() {
+    return(
+        <section className={styles.free_flex}>
                 <div className={styles.free_lecture}>
                     <div id={styles.catch_praise}>
                         무료강의? 오히려 좋아 ✨
@@ -132,9 +130,22 @@ class MainLecture extends Component {
                     </div>
                 </div>
             </section>
+    )
+}
+
+/*class MainLecture extends Component {
+    
+
+    
+
+    render() {
+        
+
+        return(
+            
             
         )
     }
-}
+}*/
 
 export default MainLecture;
