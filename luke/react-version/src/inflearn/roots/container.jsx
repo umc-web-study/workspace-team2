@@ -11,8 +11,8 @@ font-weight: 400;
 font-size: 14px;
 `;
 
-export default function Container(){
+export default function Container(props){
   return(
-    <Box />
+    <Box> {props.name} </Box>
   );
 }
