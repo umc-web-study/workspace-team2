@@ -80,14 +80,20 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.innerHTML = data;
         btn.className = "nav_btn";
 
-        btn.onClick = function(){
-            console.log(btn.innerHTML);
+        btn.onclick = function(){
+            console.log(data);s
         }
 
         btnWrapper.appendChild(btn);
     });
 
     datas.forEach(data => {
+        let div = document.createElement('div');
+        div.className = 'menu_element'
+        let text_div = document.createElement('div');
+        text_div.className = 'menu_element_txt'
+        let text = document.createElement('div');
+        text.className = "top_txt";
         let image = document.createElement('img')
         image.src = data.img_url;
         let title = document.createElement('p')
@@ -100,11 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
         let desc = document.createElement('p');
         desc.innerHTML = data.desc;
         desc.id = 'description'
-        
-        dataWrapper.appendChild(image);
-        dataWrapper.appendChild(title);
-        dataWrapper.appendChild(price);
-        dataWrapper.appendChild(line);
-        dataWrapper.appendChild(desc);
+
+        div.appendChild(image);
+        text.appendChild(title);
+        text.appendChild(price);
+        text_div.appendChild(text);
+        text_div.appendChild(line);
+        text_div.appendChild(desc);
+        div.appendChild(text_div);
+        dataWrapper.appendChild(div);
     })
 })
