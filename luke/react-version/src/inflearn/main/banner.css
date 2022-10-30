@@ -1,9 +1,18 @@
 .banner{
+  max-width: 100%;
   border-bottom: 1px solid #e9ecef;
 }
 
 .banner-imgs{
+  display: flex;
+  width: 100%;
   overflow: hidden;
+}
+
+div.banner-imgs img {
+  width: fit-content;
+  margin: 0 auto;
+  align-self: center;
 }
 
 .container-one{
@@ -85,4 +94,100 @@
 section#main_page .container {
   max-width: 1200px;
   padding: 0;
+}
+
+section.banner2{
+  display: flex;
+  padding: 24px 0; 
+}
+
+.banner2_container{
+  cursor: grab;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.banner2_swiper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.swiper-content{
+  background-image: url("https://cdn.inflearn.com/public/main_sliders/3b67a1a1-aae3-442e-8e17-791b7cdfb5f5/bottom-1920-205-%281111%29.jpg"); 
+  width: 1257px;
+  padding: 36px 0;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+  box-sizing: border-box;
+}
+
+div.swiper-content .container{
+  max-width: 1200px;
+  padding: 0 10px;
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+section.banner2 .title{
+  font-weight: 300;
+  color: #404040;
+  margin-bottom: 16px;
+}
+
+section.banner2 .button{
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  background-color: #fff;
+  color: #1dc078;
+  font-weight: 700;
+  height: auto;
+  font-size: 1rem;
+  padding: 12px 16px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-container{
+  display: flex;
+  position: absolute;
+  right: 4px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.button-left{
+  background-color: hsla(0,0%,97.6%,.8);
+  color: #979797;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-right{
+  background-color: #fff;
+  color: #979797;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  margin-left: 4px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
 }
