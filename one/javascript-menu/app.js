@@ -124,19 +124,26 @@ function displayMenuItems(menuItems) {
 //reduce 구조 질문하기!-!
 
 function displayMenuButtons() {
+
   const categories = menu.reduce(function(values, item){
     if(!values.includes(item.category)) {
       values.push(item.category);
     }
     return values;
   }, ["all"]);
+
   const categoryBtns = categories.map(function(category){
     return `<button class="filter-btn" type="button" data-id=${category}>${category}</button>`
   })
   .join("");
+
   container.innerHTML = categoryBtns;
+  
   const filterBtns = container.querySelectorAll('.filter-btn');
+  
+  
   //filter items
+  
   filterBtns.forEach(function(btn){
     btn.addEventListener('click', function(e){
       const category = e.currentTarget.dataset.id;
@@ -155,4 +162,6 @@ function displayMenuButtons() {
       }
     });
   });
+
+  
 }
