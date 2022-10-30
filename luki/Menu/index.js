@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.className = "nav_btn";
 
         btn.onclick = function () {
-            console.log(data);
             dataWrapper.remove();
             dataWrapper = document.createElement('div');
             dataWrapper.className = 'menu_data';
