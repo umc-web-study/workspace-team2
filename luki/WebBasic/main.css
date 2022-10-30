@@ -1,0 +1,733 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.hidden_div{
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+div.hidden_div p{
+    color: white;
+    font-weight: bold;
+    padding-left: 15px;
+}
+div.header {
+    width: 60%;
+    height: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.header .item{
+    float: left;
+    width: 5%;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+div.header .item_right{
+    float: right;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+hr.header_hr{
+    width: 100%;
+}
+
+div.menuBar {
+    width: 60%;
+    height: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.menuBar .item{
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+div.menuBar .right_item{
+    float: right;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#top_search{
+    width: 120px;
+    height: 30px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    background-image: url('./img/main/search.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+#login_btn{
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+#signup_btn{
+    border-radius: 5px;
+    background-color: red;
+    border: 1px solid gray;
+    color: white;
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+}
+
+div.benner_img{
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+}
+
+div.benner_img #benner{
+    width: 100%;
+  }
+
+#eventListDiv{
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    left: 45%;
+    height: 140px;
+    width: 42.9%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(233,236,239, 1);
+    background-color: white;
+}
+
+div.benner_control{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+div.control_main{
+    width: 11%;
+    height: 40px;
+    text-align: left;
+    border-radius: 100px;
+    border-style: solid 1px;
+    background-color:rgb(127,127,127, 1);
+}
+
+div.control_event{
+    width: 80%;
+    height: 40px;
+    border-left: 1px solid gray;
+    margin-left: 1%;
+    display: flex;
+    justify-content: left;
+}
+
+#events1{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events2{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events3{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events4{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events5{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events6{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#events7{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.control_event1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+div.control_event #control_eventList{
+    margin-left: 100px;
+}
+
+div.center_search{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.center_search #searchWindow{
+    background-color: rgb(227,248,239, 1);
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    background-image: url('./img/main/search.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 520px;
+    padding-left: 15px;
+    font-size: 15pt;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#searchTag {
+    display: flex;
+    justify-content: center;
+    float: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10px;
+}
+
+#Tag{
+    float: left;
+    font-size: 12pt;
+    margin-right: 10px;
+    border-radius: 50px;
+    border-style: none;
+    padding: 5px;
+    background-color: rgb(241,243,245, 1);
+}
+
+div.Freelecture{
+    width: 70%;
+    height: 430px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+}
+
+div.Freelecture #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.Freelecture #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.Freelecture #lectureList{
+    margin-top: 20px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+div.Freelecture #lectureBlock1{
+    width: 20%;
+}
+div.Freelecture #lectureBlock2{
+    width: 20%;
+}
+div.Freelecture #lectureBlock3{
+    width: 20%;
+}
+div.Freelecture #lectureBlock4{
+    width: 20%;
+}
+div.Freelecture #lectureBlock5{
+    width: 20%;
+}
+
+#lectureName{
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+
+#lectuerTeacher{
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(153,153,153, 1);
+}
+
+#price{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13pt;
+    font-weight: bold;
+    color: rgb(69,124,203, 1);
+}
+
+#listenNum{
+    width: 75px;
+    float: left;
+    margin-right: 5px;
+    background-color: rgb(246,213,234, 1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#update{
+    width: 60px;
+    float: left;
+    margin-right: 5px;
+    background-color: rgb(228,250,251, 1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#priceDown{
+    width: 48px;
+    float: left;
+    background-color: rgb(255,200,199, 1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+div.beginner{
+    width: 70%;
+    height: 430px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.beginner #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.beginner #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.beginner #lectureList{
+    margin-top: 20px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+div.beginner #lectureBlock1{
+    width: 20%;
+}
+div.beginner #lectureBlock2{
+    width: 20%;
+}
+div.beginner #lectureBlock3{
+    width: 20%;
+}
+div.beginner #lectureBlock4{
+    width: 20%;
+}
+div.beginner #lectureBlock5{
+    width: 20%;
+}
+
+div.roadmap{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.roadmap #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.roadmap #guideTxt{
+    color: lightgray;
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+div.roadmap #lectureList{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+div.roadmap #lectureBlock1{
+    width: 25%;
+}
+div.roadmap #lectureBlock2{
+    width: 25%;
+}
+div.roadmap #lectureBlock3{
+    width: 25%;
+}
+div.roadmap #lectureBlock4{
+    width: 25%;
+}
+
+div.article{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 120px;
+    overflow-x: hidden;
+}
+
+div.article #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.article #articleList{
+    margin-top: 20px;
+    height: 329px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+}
+
+div.article #articleBlock{
+    width: fit-content;
+}
+
+div.newLecture{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+}
+
+div.newLecture #catchPraise{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.newLecture #lectureList{
+    margin-top: 20px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+div.newLecture #lectureBlock1{
+    width: 20%;
+}
+div.newLecture #lectureBlock2{
+    width: 20%;
+}
+div.newLecture #lectureBlock3{
+    width: 20%;
+}
+div.newLecture #lectureBlock4{
+    width: 20%;
+}
+div.newLecture #lectureBlock5{
+    width: 20%;
+}
+
+div.reviews{
+    width: 70%;
+    height: 779px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 80px;
+}
+
+div.reviews #accountNum{
+    float: left;
+    width: 50%;
+    height: 779px;
+}
+
+div.reviews #accountNum #buttons{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.reviews #accountNum #buttons #left{
+    font-size: 15pt;
+    background-color: white; 
+    border-color: lightgreen;
+    padding: 10px;
+}
+
+div.reviews #accountNum #buttons #right{
+    font-size: 15pt; 
+    margin-left: 5px; 
+    background-color: white;
+    border-color: lightgreen;
+    padding: 10px;
+}
+
+div.reviews #reviewList{
+    float: left;
+    width: 50%;
+    height: 779px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+div.reviews #reviewList::-webkit-scrollbar{
+    display:none;
+}
+
+div.reviews #reviewBlock{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(249,249,249, 1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.footterBenner{
+    background-image: url("https://cdn.inflearn.com/public/main_sliders/38744ba0-b12a-491a-9ca2-43375c3905ba/share-you.jpg");
+    height: 230px;
+}
+
+div.footterBenner #moreBtn{
+    margin-left: 30px;
+    padding: 10px;
+    margin-left: 15%;
+    font-size: 13pt;
+    color: lightgreen;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+div.companys{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 100px;
+}
+
+div.companys #textWrapper{
+    width: 100%;
+    text-align: center;
+}
+
+div.companys #imgWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.companys #companyLogo{
+    float: left;
+    margin-right: 20px;
+}
+
+div.service{
+    width: 70%;
+    height: 426px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+    background-color: rgb(249,249,249, 1)
+}
+
+div.service #textWrapper{
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+div.service #serviceWrapper{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+div.service #serviceList{
+    float: left;
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-style: ridge;
+    border-color: transparent;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+div.service #serviceList p{
+    margin-top: 40px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+div.service #serviceList p span{
+    font-size: 15pt; font-weight: bolder;
+}
+
+div.service #btn{
+    vertical-align: bottom;
+    width: fit-content;
+    background-color: rgb(29,192,120, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+div.footer{
+    width: 98%;
+    background-color: rgb(48,55,64, 1);
+    padding-left: 40px;
+}
+
+div.footer #tableWrapper{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: left;
+    padding-top: 40px;
+}
+
+div.footer #listBlock{
+    width: 20%;
+}
+
+div.footer #listHeader{
+    color: white;
+    margin-bottom: 20px;
+}
+
+div.footer #listBody{
+    color: rgb(163,164,166, 1);
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+div.footer #infoWrapper{
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer #infoLeft{
+    width: auto;
+}
+
+div.footer #infoLeft a{
+    color: rgb(163,164,166, 1);
+    margin-left: 10px;
+    border-left: 1px solid rgb(163,164,166, 1);
+    cursor: pointer;
+}
+
+div.footer #infoRight {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+div.footer #infoRight button{
+    width: 45px;
+    height: 45px;
+    margin: 0px;
+    background-color: rgb(48,55,64, 1);
+    border-style: none;
+    cursor: pointer;
+}
