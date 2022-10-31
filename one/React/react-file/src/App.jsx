@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import './App.css';
 import Header from './Header'
 import Nav from './Nav'
@@ -13,23 +13,31 @@ import NewCourse from './NewCourse';
 import Review from './Review';
 import BottomBanner from './BottomBanner';
 
-function App() {
-  return (
-    <>
-    <Header />
-    <Nav />
-    <Banner />
-    <MiddleSearch />
-    <Tag />
-    <FreeCourse />
-    <WelcomeCourse />
-    <RoadMap />
-    <Curation />
-    <NewCourse />
-    <Review />
-    <BottomBanner />
-    </>
-  );
+
+//function 대신 class
+
+class App extends Component{
+  
+  render()
+    {
+      return (
+      <>
+      <Header />
+      <Nav />
+      <Banner />
+      <MiddleSearch />
+      <Tag />
+      <FreeCourse />
+      <WelcomeCourse />
+      <RoadMap />
+      <Curation />
+      <NewCourse />
+      <Review />
+      <BottomBanner />
+      </>
+    );
+
+}
 }
 
 export default App;

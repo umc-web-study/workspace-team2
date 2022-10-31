@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Banner(props) {
-    return(
-        <header></header>
-    )
+class Banner extends React.Component() {
+    render() {
+        return(
+            <>
+            <header></header>
+            </>
+        );
+    }
 }
 
 
