@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.benner_img{
+    margin-top: 0.9rem;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.main_benner{
+    width: 72%;
+    height: 2%;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: left;
+}
+
+.benner_contol{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+}
+
+.control_main{
+    width: 10%;
+    height: 2%;
+    padding: 0.2rem;
+    margin-right: 3rem;
+    background-color: rgb(138,138,138, 1);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#control_location{
+    color: white ; 
+    font-size: 15pt; 
+    float: left; 
+    width: 25%;
+    height: 100%;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+#control_elements{
+    width: 25%; 
+    height: 5%;
+}
+
+.control_event{
+    width: 90%;
+    display: flex;
+    justify-content: left;
+}
+
+.events{
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem 0.1rem 1rem;
+    border: 1px solid rgb(221,225,229, 1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.control_eventList{
+    width: 3%;
+    height: 90%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: right;
+}
+
+.center_flex{
+    width: 100%;
+}
+
+.center_catch{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(54,54,54, 1);
+}
+
+.center_search{
+    width: 100%;
+    text-align: center;
+}
+
+#search_window{
+    width: 33rem;
+    height: 3.25rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: rgb(231,247,239, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10rem;
+    border-color: rgb(188,234,212, 1);
+    background-image: url('../../public/img/main/search.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30rem;
+    background-size: 1.5rem;
+}
+
+#search_tag{
+    display: table;
+    width: 30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+#tag{
+    display: table-cell;
+    width: fit-content;
+}

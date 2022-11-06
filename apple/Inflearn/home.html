@@ -4,88 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="home.css" rel="stylesheet">
   <title>인프런 - 미래의 동료들과 함께 성장하는 곳 | IT 정보 플랫폼</title>
 </head>
 <body>
-  <div>
-    <a><img src="images/Education.png" width="50" style="margin-bottom: -2px;"></a> | <a><img src="images/Employmen.png" width="50" style="margin-bottom: -2px;"></a> <a style="float: right;">지식공유 참여</a>
+  <div class="topBar">
+    <div><img src="images/Education.svg" class="directEducation"></div>
+    <b class="educationLabel">교육</b>
+    <div class="verticalLineSmall"></div>
+    <div><img src="images/Employment.svg" class="directEmployment"></div>
+    <a class="employmentLabel">채용</a>
+    <div class="enterInfoShare">지식공유 참여</div>
   </div>
-  <hr>
+
+  <hr class="headerBottomLine">
   
-  <div>
-    <a style="float: left;"><img src="images/InflearnLogo.png" width="130"></a>
-    <nav style="float: left; margin-top: 10px;">
-      <a>강의</a>
-      <a>로드맵</a>
-      <a>멘토링</a>
-      <a>커뮤니티</a>
-      <a>인프런</a>
+  <div class="navBar">
+    <a class="logoImage"><img src="images/InflearnLogo.svg" width="130"></a>
+    <nav>
+      <div class="menu">강의</div>
+      <div class="menu">로드맵</div>
+      <div class="menu">멘토링</div>
+      <div class="menu">커뮤니티</div>
+      <div class="menu">인프런</div>
     </nav>
 
-    <button type="button" style="float: right;">회원가입</button>
-    <button type="button" style="float: right;">로그인</button>
-    <button type="button" style="float: right; background-color: white;"><img src="images/SearchIcon.png" width="10"></button>
-    <input type="search" style="float: right;">
-    
+    <div class="navBar_right">
+      <input type="search" class="searchTextField">
+      <button type="button" class="searchButton">
+        <img src="images/SearchIcon.png" class="searchButtonImage">
+      </button>
+      <button type="button" class="loginButton">로그인</button>
+      <button type="button" class="singUpButton">회원가입</button>
+    </div>
   </div>
 
-  <div style="clear: both;">
-    <img src="images/Advertisement.png" width="100%" height="320px">
+  <div class="advertisementDiv">
+    <img src="images/Advertisement.png" class="advertisementImage">
   </div>
   
-  <div>
-    <div style="float: left;">
-      <div style="float: left;">1/7</div>
+  <div class="eventBar">
+    <div class="scrollDiv">
+      <div class="scrollPage">1/7</div>
       <button><</button>
       <button>||</button>
       <button>></button>
     </div>
 
-    <div style="float: left;">
-      <table style="float: left;">
+    <div class="verticalLineLarge"></div>
+
+    <div class="events">
+      <table>
         <tr>
-          <td>Top 50 👑</td>
-          <td>지식공유신청</td>
-          <td>왕초보 모여라 😎</td>
-          <td>입문 로드맵</td>
-          <td>신규 강의 🎁</td>
-          <td>인프런은 🌱</td>
-          <td>인프런 동료찾기</td>
+          <td><div class="events_item1">Top 50 👑</div></td>
+          <td><div class="events_item2">지식공유신청</div></td>
+          <td><div class="events_item3">왕초보 모여라 😎</div></td>
+          <td><div class="events_item4">입문 로드맵</div></td>
+          <td><div class="events_item5">신규 강의 🎁</div></td>
+          <td><div class="events_item6">인프런은 🌱</div></td>
+          <td><div class="events_item7">인프런 동료찾기</div></td>
         </tr>
       </table>
     </div>
 
-    <div>
-      <button style="float: right;">🔽</button>
+    <div class="dropEventsDiv">
+      <div class="dropEventsDiv_inner">
+        <div>v</div>
+      </div>
     </div>
   </div>
 
-  <div style="clear: both; text-align: center;">
-    <h2>인프런에서 가치를 높이세요</h2>
-    <input type="search">
-    <button type="button" style="background-color: white;"><img src="images/SearchIcon.png" width="30"></button>
+  <hr class="headerBottomLine">
+
+  <div class="mainSearch">
+    <h1 class="slogan">인프런에서 성장을 도와드려요</h1>
+    <input class="mainSearchTextField" type="search" placeholder="배우고 싶은 지식을 입력해보세요.">
+    <button class="mainSearchButton" type="button"><img class="mainSearchButtonImage" src="images/SearchIcon.png"></button>
   </div>
 
-  <div>
-    <table style="margin: auto;">
-      <tr>
-        <td>#MVC</td>
-        <td>#Spring Boot</td>
-        <td>#JPA</td>
-        <td>#Pythono</td>
-        <td>#Java</td>
-        <td>#Spring</td>
-        <td>#JavaScript</td>
-      </tr>
-    </table>
+  <div class="category">
+    <h2 class="largeTitle">무료강의? 오히려 좋아 ✨ ></h2>
+    <p class="smallTitle">무료 강의부터 가볍게 시작해 보세요.</p>
   </div>
 
-  <div>
-    <h2>무료강의? 오히려 좋아 ✨ ></h2>
-    <p>무료 강의부터 가볍게 시작해 보세요.</p>
-  </div>
-
-  <div>
+  <div class="lecturesTable">
     <table>
       <tr>
         <td> <img src="images/Spring.png" width="230"> </td>
@@ -95,61 +97,61 @@
         <td> <img src="images/React.jpeg" width="230"> </td>
       </tr>
       <tr>
-        <td width="230"> <h4>스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술</h4> </td>
-        <td width="230"> <h4>인프콘 2022 다시보기</h4> </td>
-        <td width="230"> <h4>[코드 팩토리] [입문] Dart 언어 4시간만에 완전정복</h4> </td>
-        <td width="230"> <h4>[리뉴얼] 렛츠기릿 자바스크립트</h4> </td>
-        <td width="230"> <h4>웹 게임을 만들며 배우는 React</h4> </td>
+        <td> <h4>스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술</h4> </td>
+        <td> <h4>인프콘 2022 다시보기</h4> </td>
+        <td> <h4>[코드 팩토리] [입문] Dart 언어 4시간만에 완전정복</h4> </td>
+        <td> <h4>[리뉴얼] 렛츠기릿 자바스크립트</h4> </td>
+        <td> <h4>웹 게임을 만들며 배우는 React</h4> </td>
       </tr>
       <tr>
-        <td>김영한</td>
-        <td>인프런</td>
-        <td>코드팩토리</td>
-        <td>조현영</td>
-        <td>조현영</td>
+        <td class="author">김영한</td>
+        <td class="author">인프런</td>
+        <td class="author">코드팩토리</td>
+        <td class="author">조현영</td>
+        <td class="author">조현영</td>
       </tr>
       <tr>
-        <td>⭐️⭐️⭐️⭐️⭐️(4298)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(11)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(142)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(64)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(241)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(4298)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(11)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(142)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(64)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(241)</td>
       </tr>
       <tr>
-        <td> <h4>무료</h4> </td>
-        <td> <h4>무료</h4> </td>
-        <td> <h4>무료</h4> </td>
-        <td> <h4>무료</h4> </td>
-        <td> <h4>무료</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
       </tr>
       <tr>
         <td>
-          <div style="float: left;">+54400명</div>
-          <div>업데이트</div>
+          <div class="hashTag_count_5">+54400명</div>
+          <div class="hashTag_update">업데이트</div>
         </td>
         <td>
-          <div style="float: left;">+12500명</div>
-          <div>업데이트</div>
+          <div class="hashTag_count_5">+12500명</div>
+          <div class="hashTag_update">업데이트</div>
         </td>
         <td>
-          <div style="float: left;">+2000명</div>
+          <div class="hashTag_count_4">+2000명</div>
         </td>
         <td>
-          <div style="float: left;">+7100명</div>
+          <div class="hashTag_count_4">+7100명</div>
         </td>
         <td>
-          <div style="float: left;">+9200명</div>
+          <div class="hashTag_count_4">+9200명</div>
         </td>
       </tr>
     </table>
   </div>
 
-  <div>
-    <h2>왕초보도 할 수 있어요 💪 ></h2>
-    <p>이미 검증된 쉽고 친절한 입문 강의!!</p>
+  <div class="category">
+    <h2 class="largeTitle">왕초보도 할 수 있어요 💪 ></h2>
+    <p class="smallTitle">이미 검증된 쉽고 친절한 입문 강의!!</p>
   </div>
 
-  <div>
+  <div class="lecturesTable">
     <table>
       <tr>
         <td> <img src="images/Unreal.jpeg" width="230"> </td>
@@ -159,62 +161,62 @@
         <td> <img src="images/SQL.png" width="230"> </td>
       </tr>
       <tr>
-        <td width="230"> <h4>[입문자를 위한 UE5] Part1. 언리얼 엔진 블루프린트</h4> </td>
-        <td width="230"> <h4>비전공자를 위한 진짜 입문 올인원 개발 클래스</h4> </td>
-        <td width="230"> <h4>Confluence를 활용해서 효과적으로 지식 관리와 프로젝트 협업하기</h4> </td>
-        <td width="230"> <h4>남박사의 파이썬 기초부터 실전 100% 활용</h4> </td>
-        <td width="230"> <h4>핵심만 쉽게, 모두의 SQL 데이터 분석</h4> </td>
+        <td> <h4>[입문자를 위한 UE5] Part1. 언리얼 엔진 블루프린트</h4> </td>
+        <td> <h4>비전공자를 위한 진짜 입문 올인원 개발 클래스</h4> </td>
+        <td> <h4>Confluence를 활용해서 효과적으로 지식 관리와 프로젝트 협업하기</h4> </td>
+        <td> <h4>남박사의 파이썬 기초부터 실전 100% 활용</h4> </td>
+        <td> <h4>핵심만 쉽게, 모두의 SQL 데이터 분석</h4> </td>
       </tr>
       <tr>
-        <td>Rookiss</td>
-        <td>그랩</td>
-        <td>lesstif</td>
-        <td>남박사</td>
-        <td>데이터셰프</td>
+        <td class="author">Rookiss</td>
+        <td class="author">그랩</td>
+        <td class="author">lesstif</td>
+        <td class="author">남박사</td>
+        <td class="author">데이터셰프</td>
       </tr>
       <tr>
-        <td>⭐️⭐️⭐️⭐️⭐️(8)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(118)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(27)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(84)</td>
-        <td>⭐️⭐️⭐️⭐️⭐️(23)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(8)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(118)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(27)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(84)</td>
+        <td class="star">⭐️⭐️⭐️⭐️⭐️(23)</td>
       </tr>
       <tr>
-        <td> <h4>₩55,000</h4> </td>
-        <td> <h4 style="float: left;">₩143,000</h4> <h4>₩114,400</h4> </td>
-        <td> <h4>₩88,000</h4> </td>
-        <td> <h4>₩66,000</h4> </td>
-        <td> <h4>₩99,000</h4> </td>
+        <td class="price"> <h4>₩55,000</h4> </td>
+        <td class="price"> <h4>₩114,400</h4> </td>
+        <td class="price"> <h4>₩88,000</h4> </td>
+        <td class="price"> <h4>₩66,000</h4> </td>
+        <td class="price"> <h4>₩99,000</h4> </td>
       </tr>
       <tr>
         <td>
-          <div style="float: left;">+200명</div>
-          <div>새강의</div>
+          <div class="hashTag_count_3">+200명</div>
+          <div class="hashTag_newLecture">새강의</div>
         </td>
         <td>
-          <div style="float: left;">+2200명</div>
-          <div style="float: left;">업데이트</div>
-          <div>할인중</div>
+          <div class="hashTag_count_4">+2200명</div>
+          <div class="hashTag_update">업데이트</div>
+          <div class="hashTag_discount">할인중</div>
         </td>
         <td>
-          <div style="float: left;">+300명</div>
+          <div class="hashTag_count_3">+300명</div>
         </td>
         <td>
-          <div style="float: left;">+1600명</div>
+          <div class="hashTag_count_4">+1600명</div>
         </td>
         <td>
-          <div style="float: left;">+200명</div>
+          <div class="hashTag_count_3">+200명</div>
         </td>
       </tr>
     </table>
   </div>
 
-  <div>
-    <h2>기본부터 실무까지 제시해주는 로드맵 🏃🏻‍♀️ ></h2>
-    <p>아무것도 몰라도 따라오다 보면 전문가가 될 수 있어요!</p>
+  <div class="category">
+    <h2 class="largeTitle">기본부터 실무까지 제시해주는 로드맵 🏃🏻‍♀️ ></h2>
+    <p class="smallTitle">아무것도 몰라도 따라오다 보면 전문가가 될 수 있어요!</p>
   </div>
 
-  <div>
+  <div class="lecturesTable">
     <table>
       <tr>
         <td> <img src="images/MMORPG.png" width="280"> </td>
@@ -223,19 +225,19 @@
         <td> <img src="images/3D_modeling.png" width="280"> </td>
       </tr>
       <tr>
-        <td width="250"> <h4>MMORPG 게임 개발, 켠김에 끝판왕까지! (유니티 + C#)</h4> </td>
-        <td width="250"> <h4>비전공자를 위한 개발지식 한 스푼</h4> </td>
-        <td width="250"> <h4>위니브 월드: 새로운 시대 로드맵으로 Python 완전 정복!</h4> </td>
-        <td width="250"> <h4>3D 모델링, 입문부터 취업까지!<br/>(3dsmax + ZBrush)</h4> </td>
+        <td class="loadMap_td"> <h5>MMORPG 게임 개발, 켠김에 끝판왕까지! (유니티 + C#)</h5> </td>
+        <td class="loadMap_td"> <h5>비전공자를 위한 개발지식 한 스푼</h5> </td>
+        <td class="loadMap_td"> <h5>위니브 월드: 새로운 시대 로드맵으로 Python 완전 정복!</h5> </td>
+        <td class="loadMap_td"> <h5>3D 모델링, 입문부터 취업까지!<br/>(3dsmax + ZBrush)</h5> </td>
       </tr>
     </table>
   </div>
 
-  <div>
-    <h2>읽어보기 ></h2>
+  <div class="category">
+    <h2 class="largeTitle">읽어보기 ></h2>
   </div>
 
-  <div>
+  <div class="lecturesTable">
     <table>
       <tr>
         <td> <img src="images/InflearnSnack.png" width="350"> </td>
@@ -243,23 +245,23 @@
         <td> <img src="images/Infcon_large.png" width="350"> </td>
       </tr>
       <tr>
-        <td width="350"> <h4>[인프런 스택 #9] 직장인 모여라! 2022급여체 사전</h4> </td>
-        <td width="350"> <h4>[인프메이션 #53] 동아리부터 교육 프로그램까지, IT 관련...</h4> </td>
-        <td width="350"> <h4>리포트부터 발표자 소감까지, 인프콘 2022 하이라이트</h4> </td>
+        <td class="readOnce_title"> <div>[인프런 스택 #9] 직장인 모여라! 2022급여체 사전</div> </td>
+        <td class="readOnce_title"> <div>[인프메이션 #53] 동아리부터 교육 프로그램까지, IT 관련...</div> </td>
+        <td class="readOnce_title"> <div>리포트부터 발표자 소감까지, 인프콘 2022 하이라이트</div> </td>
       </tr>
       <tr>
-        <td width="350">급식체 아시나요? 그럼 급여체는요?! 😙 #직장인 #회사생활 #비즈니스 #판교사투리 평소 누가 어떻게 말하는지만 살펴봐도 많은 걸 ... </td>
-        <td width="350">IT 관련 대외활동, 여기 모여라! #STOP #디프만 #Mash Up #SSAFY #멋쟁이사자처럼 입사지원 시 자신만의 능력을 보여... </td>
-        <td width="350">인프런의 첫 오프라인 IT 콘퍼런스, 인프콘 2022! 어떤 사람들과 함께했고, 어떤 이야기가 오갔을까요? "Learn, Share & Grow" 함... </td>
+        <td class="readOnce_content">급식체 아시나요? 그럼 급여체는요?! 😙 #직장인 #회사생활 #비즈니스 #판교사투리 평소 누가 어떻게 말하는지만 살펴봐도 많은 걸 ... </td>
+        <td class="readOnce_content">IT 관련 대외활동, 여기 모여라! #STOP #디프만 #Mash Up #SSAFY #멋쟁이사자처럼 입사지원 시 자신만의 능력을 보여... </td>
+        <td class="readOnce_content">인프런의 첫 오프라인 IT 콘퍼런스, 인프콘 2022! 어떤 사람들과 함께했고, 어떤 이야기가 오갔을까요? "Learn, Share & Grow" 함... </td>
       </tr>
     </table>
   </div>
   
-  <div>
-    <h2>따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️ ></h2>
+  <div class="category">
+    <h2 class="largeTitle">따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️ ></h2>
   </div>
 
-  <div>
+  <div class="lecturesTable">
     <table>
       <tr>
         <td> <img src="images/VideoScribe.jpeg" width="230"> </td>
@@ -269,45 +271,45 @@
         <td> <img src="images/Advanced.jpeg" width="230"> </td>
       </tr>
       <tr>
-        <td width="230"> <h4>얼굴 공개없는 영상제작 - 비디오스크라이브</h4> </td>
-        <td width="230"> <h4>CRM 마케팅 끝판왕 Braze(브레이즈) 기초 활용법 & 노하우</h4> </td>
-        <td width="230"> <h4>처음하는 딥러닝과 파이토치(PyTorch) 부트캠프 [차근차근 인공지능 기본기 다지기]</h4> </td>
-        <td width="230"> <h4>블렌더 진짜 초보를 위한 강의 (Blender 3.3 LTS)</h4> </td>
-        <td width="230"> <h4>[비전공자 대환영] 캐글 데이터를 활용한 Optuna with MLFlow - 캐글다지기</h4> </td>
+        <td> <h4>얼굴 공개없는 영상제작 - 비디오스크라이브</h4> </td>
+        <td> <h4>CRM 마케팅 끝판왕 Braze(브레이즈) 기초 활용법 & 노하우</h4> </td>
+        <td> <h4>처음하는 딥러닝과 파이토치(PyTorch) 부트캠프 [차근차근 인공지능 기본기 다지기]</h4> </td>
+        <td> <h4>블렌더 진짜 초보를 위한 강의 (Blender 3.3 LTS)</h4> </td>
+        <td> <h4>[비전공자 대환영] 캐글 데이터를 활용한 Optuna with MLFlow - 캐글다지기</h4> </td>
       </tr>
       <tr>
-        <td>홍순성</td>
-        <td>daejung</td>
-        <td>잔재미코딩</td>
-        <td>AZTechnology</td>
-        <td>ChloEvan</td>
+        <td class="author">홍순성</td>
+        <td class="author">daejung</td>
+        <td class="author">잔재미코딩</td>
+        <td class="author">AZTechnology</td>
+        <td class="author">ChloEvan</td>
       </tr>
       <tr>
-        <td> <h4 style="float: left;">₩44,000</h4> <h4>₩35,200</h4> </td>
-        <td> <h4 style="float: left;">₩99,000</h4> <h4>₩69,300</h4> </td>
-        <td> <h4 style="float: left;">₩77,000</h4> <h4>₩57,750</h4> </td>
-        <td> <h4>무료</h4> </td>
-        <td> <h4 style="float: left;">₩44,000</h4> <h4>₩30,800</h4> </td>
+        <td class="price"> <h4>₩35,200</h4> </td>
+        <td class="price"> <h4>₩69,300</h4> </td>
+        <td class="price"> <h4>₩57,750</h4> </td>
+        <td class="price"> <h4>무료</h4> </td>
+        <td class="price"> <h4>₩30,800</h4> </td>
       </tr>
       <tr>
         <td>
-          <div style="float: left;">새강의</div>
-          <div>할인중</div>
+          <div class="hashTag_newLecture">새강의</div>
+          <div class="hashTag_discount">할인중</div>
         </td>
         <td>
-          <div style="float: left;">새강의</div>
-          <div>할인중</div>
+          <div class="hashTag_newLecture">새강의</div>
+          <div class="hashTag_discount">할인중</div>
         </td>
         <td>
-          <div style="float: left;">새강의</div>
-          <div>할인중</div>
+          <div class="hashTag_newLecture">새강의</div>
+          <div class="hashTag_discount">할인중</div>
         </td>
         <td>
-          <div>새강의</div>
+          <div class="hashTag_newLecture">새강의</div>
         </td>
         <td>
-          <div style="float: left;">새강의</div>
-          <div>할인중</div>
+          <div class="hashTag_newLecture">새강의</div>
+          <div class="hashTag_discount">할인중</div>
         </td>
       </tr>
     </table>
@@ -442,7 +444,7 @@
   <hr>
 
   <div>
-    <img src="images/InflearnLogo.png" style="width: 100px; float: left; margin-top: -7px;">
+    <img src="images/InflearnLogo.svg" style="width: 100px; float: left; margin-top: -7px;">
     <div> | 개인정보취급방침 | 이용약관 </div>
     <div style="clear: both;">
       (주)인프랩 | 대표자: 이형주 | 사업자번호: 499-81-00612 사업자 정보 확인<br>
