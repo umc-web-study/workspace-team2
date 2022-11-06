@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-function FreeCourse(props) {
-    return(
-        <header></header>
-        )
+class FreeCourse extends Component {
+    
+    render() {
+        return(
+            <header></header>
+        );
+    }
+    
 }
 
 export default FreeCourse;
