@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Curation(props) {
-    return(
-        <header></header>
-    )
+class Curation extends Component {
+    
+    render() {
+        return(
+            <header></header>
+        );
+    }
+
 }
 
 export default Curation;

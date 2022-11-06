@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-function MiddleSearch(props) {
-    return(
-        <header></header>
-    )
+class MiddleSearch extends Component {
+    
+    render() {
+        return(
+            <header></header>
+        );
+    }
+    
 }
 
 export default MiddleSearch;
