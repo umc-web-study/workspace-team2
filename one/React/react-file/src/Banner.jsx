@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Banner extends React.Component() {
+class Banner extends Component {
     render() {
         return(
             <>

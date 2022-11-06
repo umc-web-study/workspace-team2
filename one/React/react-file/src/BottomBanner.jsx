@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-function BottomBanner(props) {
-    return(
-        <header></header>
-    )
+class BottomBanner extends Component {
+
+    render() {
+        return(
+            <header></header>
+        );
+    }
+
 }
 
 export default BottomBanner;
