@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledMsgField } from "../style/chat/StyledMsgField";
-import { MsgBox } from "./MsgBox";
+import MsgBox from "./MsgBox";
 
 let index;
 

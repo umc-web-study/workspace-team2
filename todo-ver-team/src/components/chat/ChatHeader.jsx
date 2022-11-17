@@ -7,3 +7,5 @@ const ChatHeader = ({chatName, userNum }) => {
         <p>{ userNum }</p>
     </StyledChatHeader>
 }
+
+export default ChatHeader;

@@ -1,44 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import ChatHeader from "./ChatHeader"
 import MsgField from "./MsgField";
-import SendField from "./SendField";
-import SendButton from "./SendButton";
+import { StyledSendField } from "../style/chat/StyledSendField";
+import { StyledSendButton } from "../style/chat/StyledSendButton";
+import { useChatList } from "../../hooks/chat/useChatList";
 
-const [chatList, setChatList] = useState();
+const ChatWrapper = (props) => {
 
-const sendMsg = () => {
-    msgAsync();
-};
+    const [setNewMsg, sendMsg, chatList] = useChatList();
 
-async function msgAsync() {
-    await msgCatcher();
-}
+    const catchMsg = () => {
+        let box = document.querySelector("#msgBox");
+        let msg = box.innerHTML;
+        let current = new Date();
 
-function msgCatcher() {
-    let box = document.querySelector("#msgBox");
-    let msg = box.innerHTML;
-    let user = "test";
-    let current = new Date();
+        let msgObj = {
+            createdAt: current,
+            message: msg,
+            room: props.roomNum,
+            name: props.userName
+        };
 
-    let msgObj = {
-        name: user,
-        time: current,
-        sended: msg
+        setNewMsg(msgObj);
+        sendMsg();
     };
 
-    setChatList(msgObj);
-}
-
-const ChatWrapper = ({ chatName, userNum}) => (
-    
-
-    <section>
-        <ChatHeader chatName = {chatName} userNum={userNum}></ChatHeader>
-        <MsgField chatList={ chatList }></MsgField>
-        <SendField></SendField>
-        <SendButton callback={sendMsg}></SendButton>
-    </section>
-);
+    return (
+        <section>
+            <ChatHeader chatName={props.chatName} userNum={props.userNum}></ChatHeader>
+            <MsgField chatList={chatList}></MsgField>
+            <StyledSendField id="msgBox"></StyledSendField>
+            <StyledSendButton type="submit" onClick={catchMsg}>전송</StyledSendButton>
+        </section>
+    );
+};
 
 export default ChatWrapper;
