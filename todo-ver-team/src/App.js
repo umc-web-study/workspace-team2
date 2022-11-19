@@ -1,11 +1,13 @@
 import React from 'react';
 import Back from './components/Back.js'
+import ReceiptBox from './components/receipt/receiptBox.jsx';
 //import C from './components/C';
 
 function App() {
   return (
-    
-    <Back></Back>
+    <>
+      <ReceiptBox user={"Test"} group={"TestGroup"} />
+    </>
   );
 }
 
