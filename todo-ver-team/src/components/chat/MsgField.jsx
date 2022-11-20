@@ -2,14 +2,21 @@ import React from "react";
 import { StyledMsgField } from "../style/chat/StyledMsgField";
 import MsgBox from "./MsgBox";
 
-let index;
+let index = 0;
 
-const MsgField = ({ chatList }) => (
-    <StyledMsgField>
-        chatList.map(function(){
-            <MsgBox msg={chatList[index]}></MsgBox>
-        })
-    </StyledMsgField>
-);
+const MsgField = (props) => {
+
+    console.log(props);
+    return (
+        <StyledMsgField>
+            {
+                props.chatList.map(chat => (
+                    //console.log(index);
+                    <MsgBox msg={chat}></MsgBox>
+                ))
+            }
+        </StyledMsgField>
+    )
+};
 
 export default MsgField;

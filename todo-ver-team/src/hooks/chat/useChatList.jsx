@@ -1,18 +1,10 @@
 import { useEffect, useState } from 'react';
-import db from '../../config/chatFirebaseConfig';
+import db from '../../firebase.js';
 import firebase from 'firebase/compat/app';
 
 export const useChatList = () => {
     const [chatList, setChatList] = useState([]);
     const [newMsg, setNewMsg] = useState(null);
-
-    useEffect( () => {
-     db.collection('chat')
-     .orderBy('createdAt', 'desc')
-     .onSnapShot(d => {
-        setChatList(d.docs.map(doc => ({id:doc.id, message:doc.data()})))
-     })   
-    })
 
     const sendMsg = (e) => {
         e.preventDefault();
@@ -30,5 +22,5 @@ export const useChatList = () => {
         setNewMsg(null);
     }
 
-    return [setNewMsg, sendMsg, chatList];
+    return [setNewMsg, sendMsg, setChatList, chatList];
 }

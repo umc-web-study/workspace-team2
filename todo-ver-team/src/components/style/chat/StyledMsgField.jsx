@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const StyledMsgField = styled.input`
-    width: 60%;
+export const StyledMsgField = styled.div`
+    width: 90%;
     height: 80%;
-    align-items: left;
+    text-align: left;
     padding 1rem;
     margin-bottom: 2rem;
-    margin-left: 20%;
-    margin-right: 20%
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: gray;
 `;

@@ -1,0 +1,150 @@
+[debug] [2022-11-19T12:10:58.460Z] ----------------------------------------------------------------------
+[debug] [2022-11-19T12:10:58.461Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase init --debug
+[debug] [2022-11-19T12:10:58.462Z] CLI Version:   11.16.1
+[debug] [2022-11-19T12:10:58.462Z] Platform:      darwin
+[debug] [2022-11-19T12:10:58.462Z] Node Version:  v18.11.0
+[debug] [2022-11-19T12:10:58.463Z] Time:          Sat Nov 19 2022 21:10:58 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-19T12:10:58.463Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-19T12:10:58.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-19T12:10:58.496Z] > authorizing via signed-in user (destiny3910@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ijiho/WebStudy/workspace-team2/todo-ver-team
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-19T12:11:01.016Z] Using project from CLI flag: todogroup-71a92
+[debug] [2022-11-19T12:11:01.019Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 [none]
+[debug] [2022-11-19T12:11:01.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 200
+[debug] [2022-11-19T12:11:01.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 {"projectId":"todogroup-71a92","projectNumber":"77365565939","displayName":"TodoGroup","name":"projects/todogroup-71a92","resources":{"hostingSite":"todogroup-71a92","realtimeDatabaseInstance":"todogroup-71a92-default-rtdb"},"state":"ACTIVE","etag":"1_28e53a62-af83-4816-86cb-cba64191cc57"}
+[info] i  Using project todogroup-71a92 (TodoGroup) 
+[info] 
+=== Firestore Setup
+[debug] [2022-11-19T12:11:01.633Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [none]
+[debug] [2022-11-19T12:11:01.633Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com x-goog-quota-user=projects/todogroup-71a92
+[debug] [2022-11-19T12:11:02.950Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com 200
+[debug] [2022-11-19T12:11:02.950Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [omitted]
+[debug] [2022-11-19T12:11:02.951Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 [none]
+[debug] [2022-11-19T12:11:03.280Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 404
+[debug] [2022-11-19T12:11:03.280Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 {"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}}
+[debug] [2022-11-19T12:11:03.281Z] error getting database typeHTTP Error: 404, App does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"HTTP Error: 404, App does not exist.","status":404}
+[debug] [2022-11-19T12:11:03.281Z] database_type: undefined
+[error] 
+[error] Error: It looks like you haven't used Cloud Firestore in this project before. Go to https://console.firebase.google.com/project/todogroup-71a92/firestore to create your Cloud Firestore database.
+[debug] [2022-11-19T12:21:05.990Z] ----------------------------------------------------------------------
+[debug] [2022-11-19T12:21:05.991Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase init --debug
+[debug] [2022-11-19T12:21:05.991Z] CLI Version:   11.16.1
+[debug] [2022-11-19T12:21:05.991Z] Platform:      darwin
+[debug] [2022-11-19T12:21:05.991Z] Node Version:  v18.11.0
+[debug] [2022-11-19T12:21:05.992Z] Time:          Sat Nov 19 2022 21:21:05 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-19T12:21:05.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-19T12:21:06.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-19T12:21:06.027Z] > authorizing via signed-in user (destiny3910@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ijiho/WebStudy/workspace-team2/todo-ver-team
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-19T12:21:10.230Z] Using project from CLI flag: todogroup-71a92
+[debug] [2022-11-19T12:21:10.232Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 [none]
+[debug] [2022-11-19T12:21:10.820Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 200
+[debug] [2022-11-19T12:21:10.820Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 {"projectId":"todogroup-71a92","projectNumber":"77365565939","displayName":"TodoGroup","name":"projects/todogroup-71a92","resources":{"hostingSite":"todogroup-71a92","realtimeDatabaseInstance":"todogroup-71a92-default-rtdb"},"state":"ACTIVE","etag":"1_a896b8b2-cc3d-48a9-942d-5b28473ce1be"}
+[info] i  Using project todogroup-71a92 (TodoGroup) 
+[info] 
+=== Firestore Setup
+[debug] [2022-11-19T12:21:10.841Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [none]
+[debug] [2022-11-19T12:21:10.841Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com x-goog-quota-user=projects/todogroup-71a92
+[debug] [2022-11-19T12:21:12.114Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com 200
+[debug] [2022-11-19T12:21:12.114Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [omitted]
+[debug] [2022-11-19T12:21:12.115Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 [none]
+[debug] [2022-11-19T12:21:12.714Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 404
+[debug] [2022-11-19T12:21:12.715Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 {"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}}
+[debug] [2022-11-19T12:21:12.715Z] error getting database typeHTTP Error: 404, App does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"HTTP Error: 404, App does not exist.","status":404}
+[debug] [2022-11-19T12:21:12.716Z] database_type: undefined
+[error] 
+[error] Error: It looks like you haven't used Cloud Firestore in this project before. Go to https://console.firebase.google.com/project/todogroup-71a92/firestore to create your Cloud Firestore database.
+[debug] [2022-11-19T12:27:38.872Z] ----------------------------------------------------------------------
+[debug] [2022-11-19T12:27:38.873Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase init --debug
+[debug] [2022-11-19T12:27:38.873Z] CLI Version:   11.16.1
+[debug] [2022-11-19T12:27:38.873Z] Platform:      darwin
+[debug] [2022-11-19T12:27:38.873Z] Node Version:  v18.11.0
+[debug] [2022-11-19T12:27:38.876Z] Time:          Sat Nov 19 2022 21:27:38 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-19T12:27:38.877Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-19T12:27:38.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-19T12:27:38.912Z] > authorizing via signed-in user (destiny3910@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ijiho/WebStudy/workspace-team2/todo-ver-team
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-19T12:27:40.902Z] Using project from CLI flag: todogroup-71a92
+[debug] [2022-11-19T12:27:40.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 [none]
+[debug] [2022-11-19T12:27:41.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 200
+[debug] [2022-11-19T12:27:41.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todogroup-71a92 {"projectId":"todogroup-71a92","projectNumber":"77365565939","displayName":"TodoGroup","name":"projects/todogroup-71a92","resources":{"hostingSite":"todogroup-71a92","realtimeDatabaseInstance":"todogroup-71a92-default-rtdb"},"state":"ACTIVE","etag":"1_a896b8b2-cc3d-48a9-942d-5b28473ce1be"}
+[info] i  Using project todogroup-71a92 (TodoGroup) 
+[info] 
+=== Firestore Setup
+[debug] [2022-11-19T12:27:41.417Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [none]
+[debug] [2022-11-19T12:27:41.417Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com x-goog-quota-user=projects/todogroup-71a92
+[debug] [2022-11-19T12:27:42.688Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com 200
+[debug] [2022-11-19T12:27:42.688Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todogroup-71a92/services/firestore.googleapis.com [omitted]
+[debug] [2022-11-19T12:27:42.689Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 [none]
+[debug] [2022-11-19T12:27:43.287Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 404
+[debug] [2022-11-19T12:27:43.287Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/todogroup-71a92 {"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}}
+[debug] [2022-11-19T12:27:43.288Z] error getting database typeHTTP Error: 404, App does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"App does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"HTTP Error: 404, App does not exist.","status":404}
+[debug] [2022-11-19T12:27:43.288Z] database_type: undefined
+[error] 
+[error] Error: It looks like you haven't used Cloud Firestore in this project before. Go to https://console.firebase.google.com/project/todogroup-71a92/firestore to create your Cloud Firestore database.
