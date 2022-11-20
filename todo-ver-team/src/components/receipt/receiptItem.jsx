@@ -7,41 +7,23 @@ const ReceiptItem = ({user, group}) => {
   const [nowP, setNowP] = useState(0);
   const [remainP, setRemainP] = useState(total - nowP);
 
-  async function setData() {
-    setTotal();
-    setNowP();
-    setRemainP();
-
-    const dt = total;
-    const dnp = nowP;
-    const drp = remainP
-
-    const data = [dt, dnp, drp];
-    return data;
-  }
-
-  const receiptItem = ({dt, dnp, drp}) => {
-    
-    return new Promise (
-      <>
-        <Item>
-          test
-        </Item>
-      </>
-    );
-  }
-
-  const receiptBox = async () => {
+  const receiptBox = ({tp, np, rp}) => {
     const result = [];
+    const items = [];
 
-    for (const data of setData()) {
-      await result.push(receiptItem(data));
+    for (let i = 0; i < 5; i++) {
+      items.push(
+        <Item>
+          
+        </Item>
+      )
     }
 
+    return result;
   }
 
   return (
-    <ItemBox>{receiptBox()}</ItemBox>
+    <ItemBox>{receiptBox(total, nowP, remainP)}</ItemBox>
   );
 }
 

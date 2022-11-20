@@ -16,3 +16,7 @@ export const ItemBox = styled.div`
 export const Item = styled.div`
 
 `;
+
+export const ItemThumbnail = styled.div`
+
+`;
