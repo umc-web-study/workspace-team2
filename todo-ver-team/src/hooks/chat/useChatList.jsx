@@ -4,23 +4,24 @@ import firebase from 'firebase/compat/app';
 
 export const useChatList = () => {
     const [chatList, setChatList] = useState([]);
-    const [newMsg, setNewMsg] = useState(null);
+    const [newMsg, setNewMsg] = useState();
 
-    const sendMsg = (e) => {
-        e.preventDefault();
-
+    const sendMsg = () => {
+        console.log("In custom hook", newMsg);
         let obj = {
-            createdAt:firebase.firestore.FieldValue.serverTimestamp(),
+            //createdAt:firebase.firestore.FieldValue.serverTimestamp(),
+            createdAt: new Date(),
             message: newMsg.message,
-            room: newMsg.roomNum,
-            user: newMsg.userName
+            name: newMsg.name
         }
 
-        db.collection('chat').add({ obj });
+        //db.collection('chat').add({ obj });
 
-        setChatList([...chatList, { obj }]);
+        let newList = chatList;
+        newList.push(obj);
+        setChatList(newList);
         setNewMsg(null);
     }
 
-    return [setNewMsg, sendMsg, setChatList, chatList];
+    return [setNewMsg, sendMsg, setChatList, chatList, newMsg];
 }

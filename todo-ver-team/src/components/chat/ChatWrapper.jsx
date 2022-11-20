@@ -33,18 +33,16 @@ const dum = [
 ];
 
 let check = true;
+let currentMsg;
 
 const ChatWrapper =  (props) => {
 
-    const [setNewMsg, sendMsg, setChatList, chatList] = useChatList();  
+    const [setNewMsg, sendMsg, setChatList, chatList, newMsg] = useChatList();  
     
     useEffect(() => {
-        if(check){
-            setChatList(dum);
-            check = !check;
-        }
-        
-        console.log(chatList);
+        setChatList(dum);
+          
+        console.log("At init", chatList);
         /*const chatRef = collection(db, "chat");
         const q = query(chatRef, where("room", "==", props.roomNum));
         
@@ -58,30 +56,33 @@ const ChatWrapper =  (props) => {
             setChatList(chats);
             console.log(chats);
         })*/
-       }, [chatList]);
+       }, []);
     
-    const catchMsg = useCallback(() => {
-        let box = document.querySelector("#msgBox");
-        let msg = box.innerHTML;
-        let current = new Date();
-
+    const trnasferMsg = useCallback(() => {
         let msgObj = {
-            createdAt: current,
-            message: msg,
-            room: props.roomNum,
+            createdAt: new Date(),
+            message: currentMsg,
             name: props.userName
         };
 
+        console.log("in transferMsg", msgObj);
         setNewMsg(msgObj);
+
+        console.log("in transferMsg", newMsg);
         sendMsg();
-    }, [chatList]);
+    }, []);
+
+    const catchMsg = useCallback((event) => {
+        currentMsg = event.target.value;
+        console.log(currentMsg);
+    }, []);
 
     return (
         <section>
             <ChatHeader chatName={props.chatName} userNum={props.userNum}></ChatHeader>
-            <MsgField chatList={dum}></MsgField>
-            <StyledSendField id="msgBox"></StyledSendField>
-            <StyledSendButton type="submit" onClick={() => {catchMsg()}}>전송</StyledSendButton>
+            <MsgField chatList={chatList}></MsgField>
+            <StyledSendField id="msgBox" onChange={(event) => {catchMsg(event)}}></StyledSendField>
+            <StyledSendButton type="submit" onClick={() => {trnasferMsg()}}>전송</StyledSendButton>
         </section>
     );
 };

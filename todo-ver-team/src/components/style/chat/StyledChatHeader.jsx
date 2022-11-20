@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
 export const StyledChatHeader = styled.div`
-    width 100%;
+    width 90%;
+    margin-left: 5%;
 `;

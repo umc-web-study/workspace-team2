@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledMsgField = styled.div`
     width: 90%;
-    height: 80%;
+    height: 40rem;
     text-align: left;
     padding 1rem;
     margin-bottom: 2rem;
