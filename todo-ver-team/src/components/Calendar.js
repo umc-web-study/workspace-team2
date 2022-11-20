@@ -3,9 +3,25 @@ import React, { useState } from "react";
 import leftIcon from "../img/leftarrow.png";
 import rightIcon from "../img/rightarrow.png";
 
+
 const Calendar = () => {
+
+    const [color, setColor] = useState('white');
+
+    const onClickDate = () => {
+        color === 'white' ? setColor('black') : setColor('white');
+    }
+
+    const todaydatelist = {
+        years: new Date().getFullYear(), //오늘 연도
+        months: new Date().getMonth() + 1, //오늘 월
+        dates: new Date().getDate(), //오늘 날짜
+        days: new Date().getDay(), //오늘 요일
+      };
+
     const [year, setYear] = useState(new Date().getFullYear());
     const [month, setMonth] = useState(new Date().getMonth() + 1);
+    const [nowdate, setTodaydate] = useState(new Date().getDate());
 
     const previousMonth = () => {
         if (month === 1) {
@@ -48,18 +64,43 @@ const Calendar = () => {
 
         for (let j = 0; j < calendar.length; j++) {
             const row = [];
+            var Todaystyle;
             for (let i = 0; i < 7; i++) {
                 let date = calendar[j][i] ? calendar[j][i] : null;
-
+                console.log(nowdate, ' ', date)
+                if (date === nowdate && todaydatelist.years === year && todaydatelist.months === month) {
+                    Todaystyle = {
+                        verticalAlign: 'top',
+                        fontSize: '10px',
+                        fontFamily: 'HUScribble130',
+                        lineHeight: 'auto',
+                        color: 'black',
+                        backgroundColor: 'white',
+                        borderRadius: '50%',
+                        width: '1.3rem',
+                        height: '1.3rem',
+                        margin: '0 1.3rem',
+                    };
+                }
+                else {
+                    Todaystyle = {
+                        verticalAlign: 'top',
+                        fontSize: '10px',
+                        fontFamily: 'HUScribble130',
+                        lineHeight: 'auto',
+                        color: 'white',
+                    };
+                }
                 row.push(
                     <DayBoxWrapper>
                         <DayBox></DayBox>
-                        <Text>{date}</Text>
+                        <div style={Todaystyle}><Text>{date}</Text></div>
                     </DayBoxWrapper>
                 );
             }
             result.push(<Daylist>{row}</Daylist>);
         }
+
         return result;
     };
 
@@ -111,7 +152,7 @@ const CalendarBox = styled.div`
     padding: 18px 31px;
     gap: 36px;
     margin-left:15rem;
-    margin-top:10rem;
+    margin-top:4rem;
 
 `;
 
@@ -164,7 +205,8 @@ const Text = styled.div`
     font-size: 10px;
     font-family: HUScribble130;
     line-height: auto;
-    color: white;
+    color: 'white';
+
 `;
 
 const DayBoxWrapper = styled.div`
