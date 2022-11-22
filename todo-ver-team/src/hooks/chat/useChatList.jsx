@@ -23,5 +23,5 @@ export const useChatList = () => {
         setNewMsg(null);
     }
 
-    return [setNewMsg, sendMsg, setChatList, chatList, newMsg];
+    return [sendMsg, setChatList, chatList];
 }

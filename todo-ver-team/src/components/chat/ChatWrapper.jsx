@@ -9,7 +9,7 @@ import { useChatList } from "../../hooks/chat/useChatList";
 import db from '../../firebase.js';
 import { collection,  onSnapshot, query, QuerySnapshot, where } from "firebase/firestore";
 
-const dum = [
+let dum = [
     {
         name: "Test1",
         createdAt: new Date(),
@@ -37,7 +37,7 @@ let currentMsg;
 
 const ChatWrapper =  (props) => {
 
-    const [setNewMsg, sendMsg, setChatList, chatList, newMsg] = useChatList();  
+    const [sendMsg, setChatList, chatList] = useChatList();  
     
     useEffect(() => {
         setChatList(dum);
@@ -56,20 +56,21 @@ const ChatWrapper =  (props) => {
             setChatList(chats);
             console.log(chats);
         })*/
-       }, []);
+       }, [chatList]);
     
-    const trnasferMsg = useCallback(() => {
+    const transferMsg = useCallback(() => {
         let msgObj = {
+            name: props.userName,
             createdAt: new Date(),
-            message: currentMsg,
-            name: props.userName
+            message: currentMsg
         };
+    
+        
+        dum.push(msgObj);
+        console.log("in transferMsg dum", dum);
+        setChatList([...chatList, msgObj]);
+        console.log("in transferMsg", chatList);
 
-        console.log("in transferMsg", msgObj);
-        setNewMsg(msgObj);
-
-        console.log("in transferMsg", newMsg);
-        sendMsg();
     }, []);
 
     const catchMsg = useCallback((event) => {
@@ -82,7 +83,7 @@ const ChatWrapper =  (props) => {
             <ChatHeader chatName={props.chatName} userNum={props.userNum}></ChatHeader>
             <MsgField chatList={chatList}></MsgField>
             <StyledSendField id="msgBox" onChange={(event) => {catchMsg(event)}}></StyledSendField>
-            <StyledSendButton type="submit" onClick={() => {trnasferMsg()}}>전송</StyledSendButton>
+            <StyledSendButton type="submit" onClick={() => {transferMsg()}}>전송</StyledSendButton>
         </section>
     );
 };
