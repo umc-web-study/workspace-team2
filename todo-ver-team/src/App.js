@@ -1,7 +1,6 @@
 import React from 'react';
 import Back from './components/Back.js'
 import ChatWrapper from './components/chat/ChatWrapper.jsx';
-import db from './firebase.js';
 
 //import C from './components/C';
 
