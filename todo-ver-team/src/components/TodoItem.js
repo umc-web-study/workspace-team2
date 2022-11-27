@@ -2,6 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { MdDone, MdDelete } from 'react-icons/md';
 import { useTodoDispatch } from '../TodoContext';
+import { useEffect } from 'react';
+
+// import firebase, { firestore } from '../firebase';
 
 
 const Remove = styled.div`
@@ -64,6 +67,21 @@ function TodoItem({ id, done, text }) {
     const onToggle = () => dispatch({ type: 'TOGGLE', id});
     const onRemove = () => dispatch({ type: 'REMOVE', id});
 
+    // console.log(firebase)
+    // class Example extends component {
+
+    //   componentDidMonut() {
+    //     firestore.collection('test').get()
+    //     .then(docs=>{
+    //       docs.forEach(doc=>{
+    //         console.log(doc.date()+" "+doc.id);
+    //       })
+    //     })
+    //   }
+
+    // }
+    
+    
 
   return (
     <TodoItemBlock>
