@@ -6,22 +6,37 @@ import rightIcon from "../img/rightarrow.png";
 
 const Calendar = () => {
 
-    const [color, setColor] = useState('white');
+    var Todaystyle;
+    var selectedDateStyle;
 
-    const onClickDate = () => {
-        color === 'white' ? setColor('black') : setColor('white');
-    }
+    const selectedDate = () => {
+
+        selectedDateStyle = {
+            verticalAlign: 'top',
+            fontSize: '10px',
+            fontFamily: 'HUScribble130',
+            lineHeight: 'auto',
+            color: 'white',
+            backgroundColor: 'blue',
+            borderRadius: '50%',
+            width: '1.3rem',
+            height: '1.3rem',
+            margin: '0 1.3rem',
+        }
+        console.log('Date is selected');
+    };
 
     const todaydatelist = {
         years: new Date().getFullYear(), //오늘 연도
         months: new Date().getMonth() + 1, //오늘 월
         dates: new Date().getDate(), //오늘 날짜
         days: new Date().getDay(), //오늘 요일
-      };
+    };
 
     const [year, setYear] = useState(new Date().getFullYear());
     const [month, setMonth] = useState(new Date().getMonth() + 1);
-    const [nowdate, setTodaydate] = useState(new Date().getDate());
+    //const [nowdate, setTodaydate] = useState(new Date().getDate());
+    const nowdate = new Date().getDate();
 
     const previousMonth = () => {
         if (month === 1) {
@@ -64,7 +79,7 @@ const Calendar = () => {
 
         for (let j = 0; j < calendar.length; j++) {
             const row = [];
-            var Todaystyle;
+            
             for (let i = 0; i < 7; i++) {
                 let date = calendar[j][i] ? calendar[j][i] : null;
                 console.log(nowdate, ' ', date)
@@ -92,10 +107,14 @@ const Calendar = () => {
                     };
                 }
                 row.push(
-                    <DayBoxWrapper>
-                        <DayBox></DayBox>
-                        <div style={Todaystyle}><Text>{date}</Text></div>
-                    </DayBoxWrapper>
+                    
+                        <DayBoxWrapper onClick = {selectedDate} >
+                            <div style = {selectedDateStyle}>
+                                <DayBox></DayBox>
+                                <div style={Todaystyle}><Text>{date}</Text></div>
+                            </div>
+                        </DayBoxWrapper>
+                    
                 );
             }
             result.push(<Daylist>{row}</Daylist>);
@@ -213,6 +232,7 @@ const DayBoxWrapper = styled.div`
 
     align-items:center;
     text-align:center;
+    &:hover{cursor:pointer;};
 
 `;
 const Daylist = styled.div`
